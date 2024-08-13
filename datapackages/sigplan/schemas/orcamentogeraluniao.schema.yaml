@@ -1,60 +1,95 @@
 fields:
     - name: OGUAno
-      type: integer
+      type: string
       assunto: Exercício
       objeto: Ano de Exercício
+      constraints:
+        pattern: "\d{3}"
     - name: PRGCod
       type: integer
       assunto: Funcional Programática
       objeto: Programa Código
+      constraints:
+        pattern: "\d{3}"
     - name: ACACod
       type: integer
       assunto: Funcional Programática
       objeto: ProjetoAtividade - Código
+      constraints:
+        pattern: "\d{4}"
     - name: SACCod
       type: integer
       assunto:
       objeto:
+      notas: 
+        - >
+         O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: FPPCod
-      type: integer
-      assunto:
-      objeto:
+      type: string
+      assunto: Natureza de Despesa
+      objeto: FonteRecurso - Código 
+      constraints:
+        pattern: "\d{3}"
     - name: ESFCod
       type: integer
       assunto:
       objeto:
+      notas: 
+        - >
+         O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: UNICod
-      type: integer
+      type: string
       assunto: Unidade Orçamentária
       objeto: UnidadeOrçam - Código
+      constraints:
+        pattern: "\d{5}"
     - name: UNITpoCod
       type: string
       assunto:
       objeto:
+      notas: 
+        - >
+         O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: FUNCod
-      type: integer
+      type: string
       assunto: Funcional Programática
       objeto: Função - Código
+      constraints:
+        pattern: "\d{2}"
     - name: SFUCod
-      type: integer
+      type: string
       assunto: Funcional Programática
       objeto: Subfunção - Código
+      constraints:
+        pattern: "\d{2}"
     - name: IOCCod
       type: integer
       assunto:
       objeto:
+      notas: 
+        - >
+        O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: NATCod
       type: integer
       assunto:
       objeto:
+      notas: 
+        - >
+          O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: IUSCod
       type: integer
       assunto:
       objeto:
+      notas: 
+        - >
+          O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: FOGCod
       type: integer
-      assunto: Fonte de Recurso
-      objeto: FonteRecurso - Código
+      assunto: 
+      objeto: 
+      notas: 
+        - >
+         Na planilha .csv contém o mesmo dado de FPPCod. Os dados estão duplicados?
     - name: LOCCod
       type: string
       assunto:
@@ -63,26 +98,38 @@ fields:
       type: integer
       assunto:
       objeto:
+      notas: 
+        - >
+          O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: OGUVlrLeiCreditos
       type: string
       assunto:
       objeto:
+      notas: 
+        - >
+          O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: OGUVlrEmpenhado
-      type: string
-      assunto:
-      objeto:
+      type: number
+      assunto: DESPESA REALIZADA CONSOLIDADA
+      objeto: Valor Despesa Empenhada
     - name: OGUVlrEmpenhoLiquidado
-      type: string
-      assunto:
-      objeto:
+      type: number
+      assunto: DESPESA REALIZADA CONSOLIDADA
+      objeto: Valor Despesa Liquidada
     - name: OGUVlrRestosInscrito
-      type: integer
+      type: number
       assunto:
       objeto:
+      notas: 
+        - >
+          Seria a somatória de inscrição de restos a pagar processado + restos a pagar não processado?
     - name: OGUVlrRestosPago
-      type: integer
+      type: number
       assunto:
       objeto:
+      notas: 
+        - >
+          Não idenfiquei no armazém GRP restos a pagar pago processado e restos a pagar pago não processado, como existe no armazém siafi.
     - name: OGUProposta
       type: integer
       assunto:
@@ -91,16 +138,28 @@ fields:
       type: integer
       assunto:
       objeto:
+      notas: 
+        - >
+          O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: OGUPago
       type: string
       assunto:
       objeto:
+      notas: 
+        - >
+          O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: OGULiberado
       type: integer
       assunto:
       objeto:
+      notas: 
+        - >
+          O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: ACACodCompleto
       type: string
       assunto:
       objeto:
+      notas: 
+        - >
+          O que significa esta variável? Não foi possível identificar no armazém GRP.
     
