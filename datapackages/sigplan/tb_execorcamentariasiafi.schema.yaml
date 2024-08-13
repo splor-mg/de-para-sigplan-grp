@@ -1,0 +1,71 @@
+fields:
+  - name: ANO
+    type: integer
+  - name: CDUNIDADE_ORCAM
+    type: integer
+  - name: DSUNIDADE_ORCAM
+    type: string
+  - name: SGUNIDADE_ORCAM
+    type: string
+  - name: CDFUNCAO
+    type: integer
+  - name: DSFUNCAO
+    type: string
+  - name: CDSUBFUNCAO
+    type: integer
+  - name: DSSUBFUNCAO
+    type: string
+  - name: CDPROGRAMA
+    type: integer
+  - name: DSPROGRAMA
+    type: string
+  - name: CDPROJATIVIDADE
+    type: integer
+  - name: DSPROJATIVIDADE
+    type: string
+  - name: CDGRUPODESPESA
+    type: integer
+  - name: DSGRUPODESPESA
+    type: string
+  - name: CDMODALIDADE
+    type: integer
+  - name: DSMODALIDADE
+    type: string
+  - name: IDORCAMENTO
+    type: integer
+  - name: DSORCAMENTO
+    type: string
+  - name: CDFONTE
+    type: integer
+  - name: DSFONTE
+    type: string
+  - name: CDPROCEDENCIA
+    type: integer
+  - name: DSPROCEDENCIA
+    type: string
+  - name: CDGMIFP
+    type: integer
+  - name: CDCATEGORIA
+    type: integer
+  - name: DSCATEGORIA
+    type: string
+  - name: CDELEMENTO
+    type: integer
+  - name: DSELEMENTO
+    type: string
+  - name: CREDITO_INICIAL
+    type: integer
+  - name: CREDITO_AUTORIZADO
+    type: number
+  - name: DESPESA_EMPENHADA
+    type: number
+  - name: DESPESA_REALIZADA
+    type: number
+  - name: SALDO_EMPENHADO
+    type: integer
+  - name: DTATUALIZACAO
+    type: datetime
+  - name: CODIGO_ITEM
+    type: integer
+  - name: DESCRICAO_ITEM
+    type: string

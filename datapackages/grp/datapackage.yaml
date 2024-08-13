@@ -1,0 +1,27 @@
+resources:
+  - name: report-1
+    type: table
+    path: data.xlsx
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    dialect:
+      excel:
+        sheet: Report 1
+    schema:
+      fields:
+        - name: Ano de Exercício
+          type: integer
+        - name: UnidadeOrçam - Código
+          type: string
+          constraints:
+            pattern: "\\d{5}"
+        - name: Programa - Código
+          type: integer
+        - name: ProjetoAtividade - Código
+          type: integer
+        - name: Valor Despesa Empenhada
+          type: number
+        - name: Valor Despesa Liquidada
+          type: number

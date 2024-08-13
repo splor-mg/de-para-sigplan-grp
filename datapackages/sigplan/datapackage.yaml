@@ -1,0 +1,238 @@
+resources:
+  - name: orcamentogeraluniao
+    type: table
+    path: orcamentogeraluniao.xlsx
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+  - name: tb_execorcamentariasiafi
+    type: table
+    path: tb_execorcamentariasiafi.xlsx
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+  - name: tb_execorcamentariasiafi_itemrealizado
+    type: table
+    path: tb_execorcamentariasiafi_itemrealizado.xlsx
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: ANO
+          type: integer
+        - name: CDUNIDADE_ORCAM
+          type: integer
+        - name: DSUNIDADE_ORCAM
+          type: string
+        - name: SGUNIDADE_ORCAM
+          type: string
+        - name: CDFUNCAO
+          type: integer
+        - name: DSFUNCAO
+          type: string
+        - name: CDSUBFUNCAO
+          type: integer
+        - name: DSSUBFUNCAO
+          type: string
+        - name: CDPROGRAMA
+          type: integer
+        - name: DSPROGRAMA
+          type: string
+        - name: CDPROJATIVIDADE
+          type: integer
+        - name: DSPROJATIVIDADE
+          type: string
+        - name: CDGRUPODESPESA
+          type: integer
+        - name: DSGRUPODESPESA
+          type: string
+        - name: CDMODALIDADE
+          type: integer
+        - name: DSMODALIDADE
+          type: string
+        - name: IDORCAMENTO
+          type: integer
+        - name: DSORCAMENTO
+          type: string
+        - name: CDFONTE
+          type: integer
+        - name: DSFONTE
+          type: string
+        - name: CDPROCEDENCIA
+          type: integer
+        - name: DSPROCEDENCIA
+          type: string
+        - name: CDGMIFP
+          type: integer
+        - name: CDCATEGORIA
+          type: integer
+        - name: DSCATEGORIA
+          type: string
+        - name: CDELEMENTO
+          type: integer
+        - name: DSELEMENTO
+          type: string
+        - name: CODIGO_ITEM
+          type: integer
+        - name: DESCRICAO_ITEM
+          type: string
+        - name: DESPESA_REALIZADA
+          type: number
+        - name: DTATUALIZACAO
+          type: datetime
+  - name: tb_investregionalizadosiafi
+    type: table
+    path: tb_investregionalizadosiafi.xlsx
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: CD_UNIDADEORCAM
+          type: integer
+        - name: DS_UNIDADEORCAM
+          type: string
+        - name: CD_PROGRAMA
+          type: integer
+        - name: DS_PROGRAMA
+          type: string
+        - name: CDPROJATIVIDADE
+          type: integer
+        - name: DSPROJATIVIDADE
+          type: string
+        - name: CDIBGE
+          type: integer
+        - name: NMMUNICIPIO
+          type: string
+        - name: CDREGIAO
+          type: integer
+        - name: NMREGIAO
+          type: string
+        - name: CDGRUPODESPESA
+          type: integer
+        - name: DSGRUPODESPESA
+          type: string
+        - name: DTMES
+          type: integer
+        - name: DSMES
+          type: string
+        - name: VLLIQUIDADO
+          type: number
+        - name: DTATUALIZACAO
+          type: datetime
+        - name: ANO
+          type: integer
+        - name: USUCOD
+          type: string
+  - name: tb_liquidadosiafi
+    type: table
+    path: tb_liquidadosiafi.xlsx
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: Ano
+          type: integer
+        - name: PRGCod
+          type: integer
+        - name: ACACod
+          type: integer
+        - name: FPPCod
+          type: integer
+        - name: UniCod
+          type: integer
+        - name: VlrLiquidado
+          type: number
+        - name: VlrPagoFinanceiro
+          type: number
+        - name: VlrPagoOrcamentario
+          type: number
+  - name: tmp_dadofinanceiromensal
+    type: table
+    path: tmp_dadofinanceiromensal.xlsx
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: ANO
+          type: integer
+        - name: MES
+          type: integer
+        - name: PRGCOD
+          type: integer
+        - name: ACACOD
+          type: integer
+        - name: UNICOD
+          type: integer
+        - name: LIQUIDADO
+          type: number
+  - name: vw_carga_despesa_realizada
+    type: table
+    path: vw_carga_despesa_realizada.xlsx
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: AAEXERCICIO
+          type: integer
+          assunto: Exercício
+          objeto: Ano de Exercício
+        - name: CDMES
+          type: integer
+        - name: UO
+          type: integer
+        - name: PROGRAMA
+          type: integer
+        - name: PROJATIVIDADE
+          type: integer
+        - name: FUNCAO
+          type: integer
+        - name: SUBFUNCAO
+          type: integer
+        - name: CATEGORIA
+          type: integer
+        - name: DSCATEGORIA
+          type: string
+        - name: GRUPO
+          type: integer
+        - name: DSGRUPO
+          type: string
+        - name: MODALIDADE
+          type: integer
+        - name: DSMODALIDADE
+          type: string
+        - name: ELEMENTO
+          type: integer
+        - name: DSELEMENTO
+          type: string
+        - name: ITEM
+          type: integer
+        - name: DSITEM
+          type: string
+        - name: IDORCAMENTO
+          type: integer
+        - name: FONTE
+          type: integer
+        - name: PROCEDENCIA
+          type: integer
+        - name: DSPROCEDENCIA
+          type: string
+        - name: EMPENHADO
+          type: number
+        - name: LIQUIDADO
+          type: number
+        - name: REALIZADO
+          type: number

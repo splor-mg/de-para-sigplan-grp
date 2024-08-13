@@ -1,0 +1,66 @@
+fields:
+  - name: OGUAno
+    type: integer
+    assunto: Exercício
+    objeto: Ano de Exercício
+    notas: 
+      - Dúvida/Pergunta/Documentação que merece ser comunicada externamente
+      - Dúvidas internas criar issue
+      - >
+        Se necessário podemos usar YAML multiline strings 
+
+        Com ela podemos documentar questões mais complexas.
+  - name: PRGCod
+    type: integer
+  - name: ACACod
+    type: integer
+  - name: SACCod
+    type: integer
+  - name: FPPCod
+    type: integer
+  - name: ESFCod
+    type: integer
+  - name: UNICod
+    type: string
+    assunto: 
+    objeto: UnidadeOrçam - Código
+    constraints:
+      pattern: "\d{4}"
+  - name: UNITpoCod
+    type: string
+  - name: FUNCod
+    type: integer
+  - name: SFUCod
+    type: integer
+  - name: IOCCod
+    type: integer
+  - name: NATCod
+    type: integer
+  - name: IUSCod
+    type: integer
+  - name: FOGCod
+    type: integer
+  - name: LOCCod
+    type: string
+  - name: OGUVlrLei
+    type: integer
+  - name: OGUVlrLeiCreditos
+    type: number
+  - name: OGUVlrEmpenhado
+    type: number
+  - name: OGUVlrEmpenhoLiquidado
+    type: number
+  - name: OGUVlrRestosInscrito
+    type: integer
+  - name: OGUVlrRestosPago
+    type: integer
+  - name: OGUProposta
+    type: integer
+  - name: OGULimite
+    type: integer
+  - name: OGUPago
+    type: number
+  - name: OGULiberado
+    type: integer
+  - name: ACACodCompleto
+    type: string
