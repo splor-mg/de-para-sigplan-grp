@@ -1,22 +1,16 @@
 fields:
     - name: OGUAno
-      type: string
+      type: year
       assunto: Exercício
       objeto: Ano de Exercício
-      constraints:
-        pattern: "\d{3}"
     - name: PRGCod
-      type: integer
+      type: string
       assunto: Funcional Programática
       objeto: Programa Código
-      constraints:
-        pattern: "\d{3}"
     - name: ACACod
-      type: integer
+      type: string
       assunto: Funcional Programática
       objeto: ProjetoAtividade - Código
-      constraints:
-        pattern: "\d{4}"
     - name: SACCod
       type: integer
       assunto:
@@ -28,8 +22,6 @@ fields:
       type: string
       assunto: Natureza de Despesa
       objeto: FonteRecurso - Código 
-      constraints:
-        pattern: "\d{3}"
     - name: ESFCod
       type: integer
       assunto:
@@ -41,8 +33,6 @@ fields:
       type: string
       assunto: Unidade Orçamentária
       objeto: UnidadeOrçam - Código
-      constraints:
-        pattern: "\d{5}"
     - name: UNITpoCod
       type: string
       assunto:
@@ -54,20 +44,15 @@ fields:
       type: string
       assunto: Funcional Programática
       objeto: Função - Código
-      constraints:
-        pattern: "\d{2}"
     - name: SFUCod
       type: string
       assunto: Funcional Programática
       objeto: Subfunção - Código
-      constraints:
-        pattern: "\d{2}"
     - name: IOCCod
       type: integer
       assunto:
       objeto:
-      notas: 
-        - >
+      notas: >
         O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: NATCod
       type: integer
@@ -110,14 +95,17 @@ fields:
           O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: OGUVlrEmpenhado
       type: number
+      decimalChar: ','
       assunto: DESPESA REALIZADA CONSOLIDADA
       objeto: Valor Despesa Empenhada
     - name: OGUVlrEmpenhoLiquidado
       type: number
+      decimalChar: ','
       assunto: DESPESA REALIZADA CONSOLIDADA
       objeto: Valor Despesa Liquidada
     - name: OGUVlrRestosInscrito
       type: number
+      decimalChar: ','
       assunto:
       objeto:
       notas: 
@@ -125,6 +113,7 @@ fields:
           Seria a somatória de inscrição de restos a pagar processado + restos a pagar não processado?
     - name: OGUVlrRestosPago
       type: number
+      decimalChar: ','
       assunto:
       objeto:
       notas: 
