@@ -1,0 +1,50 @@
+fields:
+    - name: AAEXERCICIO
+      type: integer
+    - name: CDMES
+      type: integer
+    - name: UO
+      type: integer
+    - name: PROGRAMA
+      type: integer
+    - name: PROJATIVIDADE
+      type: integer
+    - name: FUNCAO
+      type: integer
+    - name: SUBFUNCAO
+      type: integer
+    - name: CATEGORIA
+      type: integer
+    - name: DSCATEGORIA
+      type: string
+    - name: GRUPO
+      type: integer
+    - name: DSGRUPO
+      type: string
+    - name: MODALIDADE
+      type: integer
+    - name: DSMODALIDADE
+      type: string
+    - name: ELEMENTO
+      type: integer
+    - name: DSELEMENTO
+      type: string
+    - name: ITEM
+      type: integer
+    - name: DSITEM
+      type: string
+    - name: IDORCAMENTO
+      type: integer
+    - name: FONTE
+      type: integer
+    - name: PROCEDENCIA
+      type: integer
+    - name: DSPROCEDENCIA
+      type: string
+    - name: EMPENHADO
+      type: number
+    - name: LIQUIDADO
+      type: number
+    - name: REALIZADO
+      type: number
+      

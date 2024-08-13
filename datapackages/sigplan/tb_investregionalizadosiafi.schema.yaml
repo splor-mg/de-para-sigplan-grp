@@ -1,0 +1,38 @@
+fields:
+    - name: CD_UNIDADEORCAM
+      type: integer
+    - name: DS_UNIDADEORCAM
+      type: string
+    - name: CD_PROGRAMA
+      type: integer
+    - name: DS_PROGRAMA
+      type: string
+    - name: CDPROJATIVIDADE
+      type: integer
+    - name: DSPROJATIVIDADE
+      type: string
+    - name: CDIBGE
+      type: integer
+    - name: NMMUNICIPIO
+      type: string
+    - name: CDREGIAO
+      type: integer
+    - name: NMREGIAO
+      type: string
+    - name: CDGRUPODESPESA
+      type: integer
+    - name: DSGRUPODESPESA
+      type: string
+    - name: DTMES
+      type: integer
+    - name: DSMES
+      type: string
+    - name: VLLIQUIDADO
+      type: string
+    - name: DTATUALIZACAO
+      type: string
+    - name: ANO
+      type: integer
+    - name: USUCOD
+      type: string
+      

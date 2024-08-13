@@ -1,0 +1,14 @@
+fields:
+    - name: ANO
+      type: integer
+    - name: MES
+      type: integer
+    - name: PRGCOD
+      type: integer
+    - name: ACACOD
+      type: integer
+    - name: UNICOD
+      type: integer
+    - name: LIQUIDADO
+      type: string
+      

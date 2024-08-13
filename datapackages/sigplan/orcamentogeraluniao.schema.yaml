@@ -1,0 +1,106 @@
+fields:
+    - name: OGUAno
+      type: integer
+      assunto: Exercício
+      objeto: Ano de Exercício
+    - name: PRGCod
+      type: integer
+      assunto: Funcional Programática
+      objeto: Programa Código
+    - name: ACACod
+      type: integer
+      assunto: Funcional Programática
+      objeto: ProjetoAtividade - Código
+    - name: SACCod
+      type: integer
+      assunto:
+      objeto:
+    - name: FPPCod
+      type: integer
+      assunto:
+      objeto:
+    - name: ESFCod
+      type: integer
+      assunto:
+      objeto:
+    - name: UNICod
+      type: integer
+      assunto: Unidade Orçamentária
+      objeto: UnidadeOrçam - Código
+    - name: UNITpoCod
+      type: string
+      assunto:
+      objeto:
+    - name: FUNCod
+      type: integer
+      assunto: Funcional Programática
+      objeto: Função - Código
+    - name: SFUCod
+      type: integer
+      assunto: Funcional Programática
+      objeto: Subfunção - Código
+    - name: IOCCod
+      type: integer
+      assunto:
+      objeto:
+    - name: NATCod
+      type: integer
+      assunto:
+      objeto:
+    - name: IUSCod
+      type: integer
+      assunto:
+      objeto:
+    - name: FOGCod
+      type: integer
+      assunto: Fonte de Recurso
+      objeto: FonteRecurso - Código
+    - name: LOCCod
+      type: string
+      assunto:
+      objeto:
+    - name: OGUVlrLei
+      type: integer
+      assunto:
+      objeto:
+    - name: OGUVlrLeiCreditos
+      type: string
+      assunto:
+      objeto:
+    - name: OGUVlrEmpenhado
+      type: string
+      assunto:
+      objeto:
+    - name: OGUVlrEmpenhoLiquidado
+      type: string
+      assunto:
+      objeto:
+    - name: OGUVlrRestosInscrito
+      type: integer
+      assunto:
+      objeto:
+    - name: OGUVlrRestosPago
+      type: integer
+      assunto:
+      objeto:
+    - name: OGUProposta
+      type: integer
+      assunto:
+      objeto:
+    - name: OGULimite
+      type: integer
+      assunto:
+      objeto:
+    - name: OGUPago
+      type: string
+      assunto:
+      objeto:
+    - name: OGULiberado
+      type: integer
+      assunto:
+      objeto:
+    - name: ACACodCompleto
+      type: string
+      assunto:
+      objeto:
+    

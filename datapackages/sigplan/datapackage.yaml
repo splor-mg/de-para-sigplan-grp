@@ -1,0 +1,65 @@
+name: sigplan
+resources:
+  - name: orcamentogeraluniao
+    type: table
+    path: orcamentogeraluniao.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.yaml
+    schema: orcamentogeraluniao.schema.yaml
+  - name: tb_execorcamentariasiafi
+    type: table
+    path: tb_execorcamentariasiafi.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.yaml
+    schema: tb_execorcamentariasiafi.schema.yaml
+  - name: tb_execorcamentariasiafi_itemrealizado
+    type: table
+    path: tb_execorcamentariasiafi_itemrealizado.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.yaml
+    schema: tb_execorcamentariasiafi_itemrealizado.schema.yaml
+  - name: tb_investregionalizadosiafi
+    type: table
+    path: tb_investregionalizadosiafi.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.yaml
+    schema: tb_investregionalizadosiafi.schema.yaml
+  - name: tb_liquidadosiafi
+    type: table
+    path: tb_liquidadosiafi.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.yaml
+    schema: tb_liquidadosiafi.schema.yaml
+  - name: tmp_dadofinanceiromensal
+    type: table
+    path: tmp_dadofinanceiromensal.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.yaml
+    schema: tmp_dadofinanceiromensal.schema.yaml
+  - name: vw_carga_despesa_realizada
+    type: table
+    path: vw_carga_despesa_realizada.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8-sig
+    dialect: dialect.yaml
+    schema: vw_carga_despesa_realizada.schema.yaml

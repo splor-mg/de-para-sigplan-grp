@@ -1,0 +1,18 @@
+fields:
+    - name: Ano
+      type: integer
+    - name: PRGCod
+      type: integer
+    - name: ACACod
+      type: integer
+    - name: FPPCod
+      type: integer
+    - name: UniCod
+      type: integer
+    - name: VlrLiquidado
+      type: string
+    - name: VlrPagoFinanceiro
+      type: string
+    - name: VlrPagoOrcamentario
+      type: string
+      

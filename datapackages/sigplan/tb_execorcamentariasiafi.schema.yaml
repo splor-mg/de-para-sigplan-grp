@@ -1,0 +1,142 @@
+fields:
+    - name: ANO
+      type: integer
+      assunto: Exercício
+      objeto: Ano de Exercício
+    - name: CDUNIDADE_ORCAM
+      type: integer
+      assunto: Unidade Orçamentária
+      objeto: UnidadeOrçam - Código
+    - name: DSUNIDADE_ORCAM
+      type: string
+      assunto: Unidade Orçamentária
+      objeto:
+    - name: SGUNIDADE_ORCAM
+      type: string
+      assunto:
+      objeto:
+    - name: CDFUNCAO
+      type: integer
+      assunto:
+      objeto:
+    - name: DSFUNCAO
+      type: string
+      assunto:
+      objeto:
+    - name: CDSUBFUNCAO
+      type: integer
+      assunto:
+      objeto:
+    - name: DSSUBFUNCAO
+      type: string
+      assunto:
+      objeto:
+    - name: CDPROGRAMA
+      type: integer
+      assunto:
+      objeto:
+    - name: DSPROGRAMA
+      type: string
+      assunto:
+      objeto:
+    - name: CDPROJATIVIDADE
+      type: integer
+      assunto:
+      objeto:
+    - name: DSPROJATIVIDADE
+      type: string
+      assunto:
+      objeto:
+    - name: CDGRUPODESPESA
+      type: integer
+      assunto:
+      objeto:
+    - name: DSGRUPODESPESA
+      type: string
+      assunto:
+      objeto:
+    - name: CDMODALIDADE
+      type: integer
+      assunto:
+      objeto:
+    - name: DSMODALIDADE
+      type: string
+      assunto:
+      objeto:
+    - name: IDORCAMENTO
+      type: integer
+      assunto:
+      objeto:
+    - name: DSORCAMENTO
+      type: string
+      assunto:
+      objeto:
+    - name: CDFONTE
+      type: integer
+      assunto:
+      objeto:
+    - name: DSFONTE
+      type: string
+      assunto:
+      objeto:
+    - name: CDPROCEDENCIA
+      type: integer
+      assunto:
+      objeto:
+    - name: DSPROCEDENCIA
+      type: string
+      assunto:
+      objeto:
+    - name: CDGMIFP
+      type: integer
+      assunto:
+      objeto:
+    - name: CDCATEGORIA
+      type: integer
+      assunto:
+      objeto:
+    - name: DSCATEGORIA
+      type: string
+      assunto:
+      objeto:
+    - name: CDELEMENTO
+      type: integer
+      assunto:
+      objeto:
+    - name: DSELEMENTO
+      type: string
+      assunto:
+      objeto:
+    - name: CREDITO_INICIAL
+      type: integer
+      assunto:
+      objeto:
+    - name: CREDITO_AUTORIZADO
+      type: string
+      assunto:
+      objeto:
+    - name: DESPESA_EMPENHADA
+      type: string
+      assunto:
+      objeto:
+    - name: DESPESA_REALIZADA
+      type: string
+      assunto:
+      objeto:
+    - name: SALDO_EMPENHADO
+      type: integer
+      assunto:
+      objeto:
+    - name: DTATUALIZACAO
+      type: string
+      assunto:
+      objeto:
+    - name: CODIGO_ITEM
+      type: integer
+      assunto:
+      objeto:
+    - name: DESCRICAO_ITEM
+      type: string
+      assunto:
+      objeto:
+        
