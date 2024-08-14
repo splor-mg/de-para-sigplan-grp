@@ -8,7 +8,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: dialect.yaml
-    schema: schemas/orcamentogeraluniao.schema.yaml
+    schema: schemas/orcamentogeraluniao.yaml
   - name: tb_execorcamentariasiafi
     type: table
     path: data-raw/tb_execorcamentariasiafi.csv
@@ -17,7 +17,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: dialect.yaml
-    schema: schemas/tb_execorcamentariasiafi.schema.yaml
+    schema: schemas/tb_execorcamentariasiafi.yaml
   - name: tb_execorcamentariasiafi_itemrealizado
     type: table
     path: data-raw/tb_execorcamentariasiafi_itemrealizado.csv
@@ -26,7 +26,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: dialect.yaml
-    schema: schemas/tb_execorcamentariasiafi_itemrealizado.schema.yaml
+    schema: schemas/tb_execorcamentariasiafi_itemrealizado.yaml
   - name: tb_investregionalizadosiafi
     type: table
     path: data-raw/tb_investregionalizadosiafi.csv
@@ -35,7 +35,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: dialect.yaml
-    schema: schemas/tb_investregionalizadosiafi.schema.yaml
+    schema: schemas/tb_investregionalizadosiafi.yaml
   - name: tb_liquidadosiafi
     type: table
     path: data-raw/tb_liquidadosiafi.csv
@@ -44,7 +44,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: dialect.yaml
-    schema: schemas/tb_liquidadosiafi.schema.yaml
+    schema: schemas/tb_liquidadosiafi.yaml
   - name: tmp_dadofinanceiromensal
     type: table
     path: data-raw/tmp_dadofinanceiromensal.csv
@@ -53,7 +53,7 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: dialect.yaml
-    schema: schemas/tmp_dadofinanceiromensal.schema.yaml
+    schema: schemas/tmp_dadofinanceiromensal.yaml
   - name: vw_carga_despesa_realizada
     type: table
     path: data-raw/vw_carga_despesa_realizada.csv
@@ -62,4 +62,4 @@ resources:
     mediatype: text/csv
     encoding: utf-8-sig
     dialect: dialect.yaml
-    schema: schemas/vw_carga_despesa_realizada.schema.yaml
+    schema: schemas/vw_carga_despesa_realizada.yaml

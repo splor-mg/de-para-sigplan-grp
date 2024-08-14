@@ -4,9 +4,12 @@ fields:
       assunto: Exercício
       objeto: Ano de Exercício
     - name: PRGCod
-      type: string
+      type: integer
       assunto: Funcional Programática
       objeto: Programa Código
+      constraints:
+        minimum: 1
+        maximum: 999
     - name: ACACod
       type: string
       assunto: Funcional Programática
@@ -17,7 +20,8 @@ fields:
       objeto:
       notas: 
         - >
-         O que significa esta variável? Não foi possível identificar no armazém GRP.
+         O que significa esta variável? Colunas preenchidas somente com valores 0. 
+         Não foi possível identificar no armazém GRP. 
     - name: FPPCod
       type: string
       assunto: Natureza de Despesa
