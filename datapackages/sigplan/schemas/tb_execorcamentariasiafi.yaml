@@ -110,9 +110,9 @@ fields:
         minimum: 01
         maximum: 99
     - name: DSFONTE
-      type: integer
+      type: string
       assunto: Fonte de Recurso
-      objeto: FonteRecurso - Código
+      objeto: FonteRecurso - Descrição
     - name: CDPROCEDENCIA
       type: integer
       assunto: Procedência e Uso - IPU
@@ -129,7 +129,7 @@ fields:
       assunto: GIGFP
       objeto: GIGFP - Código
       constraints:
-        pattern: "\d{7}"
+        pattern: "\\d{7}"
       notas:
         - >
          No armazém GRP não há GMIFP, mas GIFP, ou seja, Modalidade não compõe o código.
@@ -145,19 +145,21 @@ fields:
       type: integer
       assunto: Natureza de Despesa
       objeto: ElementoDespesa - Código
-    - name: DSELEMENTO
-      type: integer
       constraints:
-        minimum: 01
+        minimum: 0
         maximum: 99
+    - name: DSELEMENTO
+      type: string
       assunto: Natureza de Despesa
       objeto: ElementoDespesa - Descrição
     - name: CREDITO_INICIAL
-      type: integer
+      type: number
+      decimalChar: ','
       assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA' 
       objeto: Valor Crédito Inicial 
     - name: CREDITO_AUTORIZADO
-      type: string
+      type: number
+      decimalChar: ','
       assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
       objeto: Valor Crédito Autorizado
     - name: DESPESA_EMPENHADA
@@ -171,9 +173,8 @@ fields:
       objeto:
       notas:
         - >
-        Em 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA' existe 'Despesa Liquidada'.
-        'Despesa Realizada' está em 'EXECUÇÃO-ORÇAMENTÁRIA-DA-DESPESA / DESPESA REALIZADA CONSOLIDADA', ou seja,
-        não pode ser gerada junto das demais medidas como 'Valor Crédito Inicial', 'Valor Despesa Empenha' e etc.
+          Em 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA' existe 'Despesa Liquidada'. 'Despesa Realizada' está em 'EXECUÇÃO-ORÇAMENTÁRIA-DA-DESPESA / DESPESA REALIZADA CONSOLIDADA', 
+          ou seja,não pode ser gerada junto das demais medidas como 'Valor Crédito Inicial', 'Valor Despesa Empenha' e etc.
     - name: SALDO_EMPENHADO
       type: number
       assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
@@ -191,12 +192,12 @@ fields:
       objeto:
       notas:
         - >
-        Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
+          Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
     - name: DESCRICAO_ITEM
       type: string
       assunto:
       objeto:
        notas:
         - >
-        Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
+          Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
         
