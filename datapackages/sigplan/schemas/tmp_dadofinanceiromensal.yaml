@@ -1,14 +1,38 @@
 fields:
     - name: ANO
-      type: integer
+      type: year
+      assunto: Exercício
+      objeto: Ano de Exercício
     - name: MES
       type: integer
+      assunto: Exercício
+      objeto: Mês - Numérico 
+      constraints:
+        minimum: 1
+        maximum: 12
     - name: PRGCOD
       type: integer
+      objeto: Programa - Código
+      constraints:
+        minimum: 1
+        maximum: 999
     - name: ACACOD
       type: integer
+      assunto: Funcional Programática
+      objeto: ProjetoAtividade - Código
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: UNICOD
       type: integer
+      assunto: Unidade Orçamentária
+      objeto: UnidadeOrçam - Código
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: LIQUIDADO
-      type: string
+      type: number
+      assunto:  "E X E C U Ç Ã O - C O N S O L I D A D A / EXECUÇÃO CONSOLIDADA DA DESPESA"
+      objeto: Valor Despesa Liquidada
+      decimalChar: ','
       
