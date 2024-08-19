@@ -1,6 +1,6 @@
 fields:
     - name: ANO
-      type: integer
+      type: year
       assunto: Exercício
       objeto: Ano de Exercício
     - name: CDUNIDADE_ORCAM
@@ -64,6 +64,7 @@ fields:
       objeto: ProjetoAtividade - Descrição
     - name: CDGRUPODESPESA
       type: integer
+      assunto: Natureza de Despesa
       objeto: GrupoDespesa - Código
       constraints:
         enum:
@@ -175,7 +176,8 @@ fields:
       objeto: Valor Despesa Realizada
       decimalChar: ','
     - name: DTATUALIZACAO
-      type: string
+      type: datetime 
+      format: "%Y/%m/%d %H:%M:%S"
       notas:
         - Campo não encontrado no armazém GRP.
       

@@ -187,7 +187,8 @@ fields:
       objeto: Valor Saldo Empenho 
       decimalChar: ','
     - name: DTATUALIZACAO
-      type: string
+      type: datetime 
+      format: "%Y/%m/%d %H:%M:%S"
       assunto:
       objeto:
       notas:

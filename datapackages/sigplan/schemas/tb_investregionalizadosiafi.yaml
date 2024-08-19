@@ -1,38 +1,105 @@
 fields:
     - name: CD_UNIDADEORCAM
       type: integer
+      assunto: Unidade Orçamentária
+      objeto: UnidadeOrçam - Código
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: DS_UNIDADEORCAM
       type: string
+      assunto: Unidade Orçamentária
+      objeto: UnidadeOrçam - Nome 
     - name: CD_PROGRAMA
       type: integer
+      objeto: Programa - Código
+      constraints:
+        minimum: 1
+        maximum: 999
     - name: DS_PROGRAMA
       type: string
+      assunto: Funcional Programática
+      objeto: Programa - Descrição
     - name: CDPROJATIVIDADE
       type: integer
+      assunto: Funcional Programática
+      objeto: ProjetoAtividade - Código
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: DSPROJATIVIDADE
       type: string
+      assunto: Funcional Programática
+      objeto: ProjetoAtividade - Descrição
     - name: CDIBGE
-      type: integer
+      type: string
+      assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA"
+      objeto: Município Regionalização - Código
+      constraints:
+        pattern: "\\d{6}"
     - name: NMMUNICIPIO
       type: string
+      assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA"
+      objeto: Município Regionalização - Nome 
     - name: CDREGIAO
       type: integer
+      assunto:
+      objeto:
+      notas:
+        - Campo não encontrado no armazém GRP.
     - name: NMREGIAO
       type: string
+      assunto:
+      objeto:
+      notas:
+        - Campo não encontrado no armazém GRP.
     - name: CDGRUPODESPESA
       type: integer
+      assunto: Natureza de Despesa
+      objeto: GrupoDespesa - Código
+      constraints:
+        enum:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 9 
     - name: DSGRUPODESPESA
       type: string
+      assunto: Natureza de Despesa
+      objeto: GrupoDespesa - Descrição 
     - name: DTMES
       type: integer
+      assunto: Exercício
+      objeto: Mês - Numérico 
+      constraints:
+        minimum: 1
+        maximum: 12
     - name: DSMES
       type: string
+      assunto: Exercício
+      objeto: Mês - Descritivo 
     - name: VLLIQUIDADO
       type: string
+      assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA"
+      objeto: Valor Despesa Liquidada 
     - name: DTATUALIZACAO
-      type: string
+      type: datetime
+      format: "%Y/%m/%d %H:%M:%S"
+      assunto:
+      objeto:
+      nota:
+        - Campo não encontrado no armazém GRP.
     - name: ANO
-      type: integer
+      type: year
+      assunto: Exercício
+      objeto: Ano de Exercício
     - name: USUCOD
       type: string
+      assunto:
+      objeto:
+      nota:
+        - Campo não encontrado no armazém GRP.
       
