@@ -137,6 +137,11 @@ fields:
       type: integer
       assunto: Natureza de Despesa
       objeto: CategoriaEconômica - Código
+      constraints:
+        enum:
+          - 3
+          - 4
+          - 9 
     - name: DSCATEGORIA
       type: string
       assunto: Natureza de Despesa
@@ -168,9 +173,10 @@ fields:
       assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
       objeto: Valor Despesa Empenhada
     - name: DESPESA_REALIZADA
-      type: string
+      type: number
       assunto:
       objeto:
+      decimalChar: ','
       notas:
         - >
           Em 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA' existe 'Despesa Liquidada'. 'Despesa Realizada' está em 'EXECUÇÃO-ORÇAMENTÁRIA-DA-DESPESA / DESPESA REALIZADA CONSOLIDADA', 
@@ -197,7 +203,7 @@ fields:
       type: string
       assunto:
       objeto:
-       notas:
+      notas:
         - >
           Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
         
