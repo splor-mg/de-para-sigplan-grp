@@ -1,18 +1,59 @@
 fields:
     - name: Ano
-      type: integer
+      type: year
+      assunto: Exercício
+      objeto: Ano de Exercício
     - name: PRGCod
       type: integer
+      assunto: Funcional Programática
+      objeto: Programa - Código
+      constraints:
+        minimum: 1
+        maximum: 999
     - name: ACACod
       type: integer
+      assunto: Funcional Programática
+      objeto: ProjetoAtividade - Código
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: FPPCod
       type: integer
+      assunto: Fonte de Recurso 
+      objeto: FonteRecurso - Código
+      constraints:
+        minimum: 01
+        maximum: 99
     - name: UniCod
       type: integer
+      assunto: Unidade Orçamentária
+      objeto: UnidadeOrçam - Código
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: VlrLiquidado
-      type: string
+      type: number
+      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A / EXECUÇÃO CONSOLIDADA DA DESPESA"
+      objeto: Valor Despesa Liquidada
+      decimalChar: ','
     - name: VlrPagoFinanceiro
-      type: string
+      type: number
+      assunto:
+      objeto:
+      decimalChar: ','
+      nota:
+        - >
+          Campo não encontrado no armazém GRP. Variável mais próxima é: 
+          assunto: E X E C U Ç Ã O - F I N A N C E I R A - P A G A M E N T O - B A N C Á R I O / E S C R I T U R A L/TRANSFERÊNCIA FINANCEIRA
+          objeto: Valor Pago Líquido 
     - name: VlrPagoOrcamentario
-      type: string
+      type: number
+      assunto:
+      objeto:
+      decimalChar: ','
+      nota:
+        - >
+          Campo não encontrado no armazém GRP. Variável mais próxima é: 
+          assunto: E X E C U Ç Ã O - F I N A N C E I R A - P A G A M E N T O - B A N C Á R I O / E S C R I T U R A L/TRANSFERÊNCIA FINANCEIRA
+          objeto: Valor Pago Líquido 
       
