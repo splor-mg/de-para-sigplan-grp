@@ -109,6 +109,8 @@ fields:
       constraints:
         minimum: 01
         maximum: 99
+      notas:
+        - Verificar se é pra considerar no armazém GRP 'FonteRecurso - Código', que tem 6 dígitos, ou 'GrupoFonte - Código', que tem 2 dígitos.
     - name: DSFONTE
       type: string
       assunto: Fonte de Recurso
