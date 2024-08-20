@@ -23,7 +23,7 @@ fields:
           Colunas preenchidas somente com valores 0. Não foi possível identificar no armazém GRP.
           O que significa esta variável?        
     - name: FPPCod
-      type: string
+      type: integer
       assunto: Natureza de Despesa
       objeto: FonteRecurso - Código 
       constraints:
@@ -40,7 +40,7 @@ fields:
           Colunas preenchidas somente com valores 0. Não foi possível identificar no armazém GRP.
           O que significa esta variável? 
     - name: UNICod
-      type: string
+      type: integer
       assunto: Unidade Orçamentária
       objeto: UnidadeOrçam - Código
       constraints:
@@ -55,7 +55,7 @@ fields:
           Colunas preenchidas somente com valores 'U'. Não foi possível identificar no armazém GRP.
           O que significa esta variável? 
     - name: FUNCod
-      type: string
+      type: integer
       assunto: Funcional Programática
       objeto: Função - Código
       constraints:
@@ -115,7 +115,8 @@ fields:
         - >
           O que significa esta variável? Não foi possível identificar no armazém GRP.
     - name: OGUVlrLeiCreditos
-      type: integer
+      type: number
+      decimalChar: ','
       assunto:
       objeto:
       notas: 
