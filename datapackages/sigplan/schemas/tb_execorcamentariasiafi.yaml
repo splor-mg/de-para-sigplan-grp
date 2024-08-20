@@ -180,7 +180,7 @@ fields:
       notas:
         - >
           Em 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA' existe 'Despesa Liquidada'. 'Despesa Realizada' está em 'EXECUÇÃO-ORÇAMENTÁRIA-DA-DESPESA / DESPESA REALIZADA CONSOLIDADA', 
-          ou seja,não pode ser gerada junto das demais medidas como 'Valor Crédito Inicial', 'Valor Despesa Empenha' e etc.
+          ou seja,não pode ser gerada junto das demais medidas como 'Valor Crédito Inicial', 'Valor Despesa Empenhada' e etc.
     - name: SALDO_EMPENHADO
       type: number
       assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
