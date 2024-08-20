@@ -1,0 +1,38 @@
+fields:
+    - name: Ano de Exercício
+      type: integer
+    - name: Mês - Numérico
+      type: integer
+    - name: Função - Código
+      type: string
+    - name: Subfunção - Código
+      type: string
+    - name: CategoriaEconômica - Código
+      type: string
+    - name: CategoriaEconômica - Descrição
+      type: string
+    - name: Programa - Código
+      type: string
+    - name: ProjetoAtividade - Código
+      type: string
+    - name: GrupoDespesa - Código
+      type: string
+    - name: GrupoDespesa - Descrição
+      type: string
+    - name: Modalidade - Código
+      type: string
+    - name: Modalidade - Descrição
+      type: string
+    - name: ElementoDespesa - Código
+      type: string
+    - name: ElementoDespesa - Descrição
+      type: string
+    - name: ElementoItem - Código
+      type: string
+    - name: ElementoItem - Descrição
+      type: string
+    - name: Valor Despesa Empenhada
+      type: string
+    - name: Valor Despesa Liquidada
+      type: string
+      

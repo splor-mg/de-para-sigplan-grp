@@ -1,0 +1,14 @@
+fields:
+    - name: Ano de Exercício
+      type: integer
+    - name: Mês - Numérico
+      type: integer
+    - name: Programa - Código
+      type: integer
+    - name: ProjetoAtividade - Código
+      type: integer
+    - name: UnidadeOrçam - Código
+      type: integer
+    - name: Valor Despesa Liquidada
+      type: string
+      

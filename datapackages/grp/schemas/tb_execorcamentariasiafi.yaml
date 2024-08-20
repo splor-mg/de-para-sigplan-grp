@@ -1,0 +1,67 @@
+fields:
+    - name: Ano de Exercício
+      type: integer
+    - name: UnidadeOrçam - Código
+      type: integer
+    - name: UnidadeOrçam - Nome
+      type: string
+    - name: UnidadeOrçam - Sigla
+      type: string
+    - name: Função - Código
+      type: integer
+    - name: Função - Descrição
+      type: string
+    - name: Subfunção - Código
+      type: integer
+    - name: Subfunção - Descrição
+      type: string
+    - name: Programa - Código
+      type: integer
+    - name: Programa - Descrição
+      type: string
+    - name: ProjetoAtividade - Código
+      type: integer
+    - name: ProjetoAtividade - Descrição
+      type: string
+    - name: GrupoDespesa - Código
+      type: integer
+    - name: GrupoDespesa - Descrição
+      type: string
+    - name: Modalidade - Código
+      type: integer
+    - name: Modalidade - Descrição
+      type: string
+    - name: IAG - Código
+      type: integer
+    - name: IAG - Descrição
+      type: string
+    - name: FonteRecurso - Código
+      type: integer
+    - name: FonteRecurso - Descrição
+      type: string
+    - name: IPU - Código
+      type: integer
+    - name: IPU - Descrição
+      type: string
+    - name: GIGFP - Código
+      type: integer
+    - name: CategoriaEconômica - Código
+      type: integer
+    - name: CategoriaEconômica - Descrição
+      type: string
+    - name: ElementoDespesa - Código
+      type: integer
+    - name: ElementoDespesa - Descrição
+      type: string
+    - name: ElementoItem - Código
+      type: integer
+    - name: ElementoItem - Descrição
+      type: string
+    - name: Valor Crédito Inicial
+      type: string
+    - name: Valor Crédito Autorizado
+      type: geopoint
+    - name: Valor Despesa Empenhada
+      type: string
+    - name: Valor Despesa Liquidada
+      type: string

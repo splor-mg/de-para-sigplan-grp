@@ -1,0 +1,39 @@
+fields:
+    - name: Ano de Exercício
+      type: year
+      assunto: Exercício
+    - name: Programa - Código
+      type: integer
+    - name: ProjetoAtividade - Código
+      type: integer
+      assunto: Funcional Programática
+    - name: UnidadeOrçam - Código
+      type: string
+      assunto: Unidade Orçamentária
+      constraints:
+        pattern: "\\d{5}"
+    - name: Função - Código
+      type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 1
+        maximum: 99
+    - name: Subfunção - Código
+      type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 10
+        maximum: 999
+    - name: FonteRecurso - Código
+      type: string
+      assunto: Natureza de Despesa
+      constraints:
+        pattern: "\\d{6}"
+    - name: Valor Despesa Empenhada
+      type: number
+      decimalChar: ','
+      assunto: DESPESA REALIZADA CONSOLIDADA
+    - name: Valor Despesa Liquidada
+      type: number
+      decimalChar: ','
+      assunto: DESPESA REALIZADA CONSOLIDADA

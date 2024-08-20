@@ -1,0 +1,30 @@
+fields:
+    - name: UnidadeOrçam - Código
+      type: integer
+    - name: UnidadeOrçam - Nome
+      type: string
+    - name: Programa - Código
+      type: integer
+    - name: Programa - Descrição
+      type: string
+    - name: ProjetoAtividade - Código
+      type: integer
+    - name: ProjetoAtividade - Descrição
+      type: string
+    - name: GrupoDespesa - Código
+      type: integer
+    - name: Município Regionalização - Código
+      type: integer
+    - name: Município Regionalização - Nome
+      type: string
+    - name: GrupoDespesa - Descrição
+      type: string
+    - name: Mês - Numérico
+      type: integer
+    - name: Mês - Descritivo
+      type: string
+    - name: Ano de Exercício
+      type: integer
+    - name: Valor Despesa Liquidada
+      type: string
+      
