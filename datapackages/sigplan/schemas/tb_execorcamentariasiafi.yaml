@@ -32,7 +32,7 @@ fields:
     - name: CDSUBFUNCAO
       type: integer
       assunto: Funcional Programática
-      objeto:
+      objeto: Subfunção - Código 
       constraints:
         minimum: 10
         maximum: 999
