@@ -137,15 +137,19 @@ fields:
       type: number
       assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
       decimalChar: ','
+      groupChar: '.'
     - name: Valor Crédito Autorizado
       type: number
-      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
       decimalChar: ','
+      groupChar: '.'
+      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
     - name: Valor Despesa Empenhada
       type: number
-      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
       decimalChar: ','
+      groupChar: '.'
+      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
     - name: Valor Despesa Liquidada
       type: number
-      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
       decimalChar: ','
+      groupChar: '.'
+      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
