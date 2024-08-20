@@ -62,7 +62,7 @@ fields:
         minimum: 1
         maximum: 99
     - name: SFUCod
-      type: string
+      type: integer
       assunto: Funcional Programática
       objeto: Subfunção - Código
       constraints:
