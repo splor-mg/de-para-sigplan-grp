@@ -12,6 +12,7 @@ fields:
         maximum: 12
     - name: PRGCOD
       type: integer
+      assunto: Funcional Programática
       objeto: Programa - Código
       constraints:
         minimum: 1

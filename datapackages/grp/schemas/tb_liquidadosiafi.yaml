@@ -1,14 +1,32 @@
 fields:
     - name: Ano de Exercício
-      type: integer
+      type: year
+      assunto: Exercício
     - name: Programa - Código
       type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 1
+        maximum: 999
     - name: ProjetoAtividade - Código
       type: integer
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: FonteRecurso - Código
       type: integer
+      assunto: Fonte de Recurso 
+      constraints:
+        minimum: 01
+        maximum: 99
     - name: UnidadeOrçam - Código
       type: integer
+      assunto: Unidade Orçamentária
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: Valor Despesa Liquidada
-      type: string
+      type: number
+      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A / EXECUÇÃO CONSOLIDADA DA DESPESA"
+      decimalChar: ','
       
