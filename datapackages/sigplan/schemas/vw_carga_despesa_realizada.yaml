@@ -157,4 +157,3 @@ fields:
         - >
           Em 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA' existe 'Despesa Liquidada'. 'Despesa Realizada' está em 'EXECUÇÃO-ORÇAMENTÁRIA-DA-DESPESA / DESPESA REALIZADA CONSOLIDADA', 
           ou seja,não pode ser gerada junto das demais medidas como 'Valor Despesa Empenhada' e 'Valor Despesa Liquidada'.
-      
