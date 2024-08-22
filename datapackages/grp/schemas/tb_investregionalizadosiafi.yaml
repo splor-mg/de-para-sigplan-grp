@@ -43,17 +43,6 @@ fields:
     - name: Município Regionalização - Nome
       type: string
       assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA"
-    - name: GrupoDespesa - Código
-      assunto: Natureza de Despesa
-      constraints:
-        enum:
-          - 1
-          - 2
-          - 3
-          - 4
-          - 5
-          - 6
-          - 9 
     - name: GrupoDespesa - Descrição
       type: string
       assunto: Natureza de Despesa
