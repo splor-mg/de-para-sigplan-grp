@@ -4,7 +4,6 @@ fields:
       assunto: Exercício
     - name: Programa - Código
       type: integer
-      assunto: Funcional Programática
     - name: ProjetoAtividade - Código
       type: integer
       assunto: Funcional Programática
