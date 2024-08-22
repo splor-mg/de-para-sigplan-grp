@@ -82,9 +82,10 @@ fields:
       assunto: Exercício
       objeto: Mês - Descritivo 
     - name: VLLIQUIDADO
-      type: string
-      assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA"
-      objeto: Valor Despesa Liquidada 
+      type: number
+      assunto: "EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA"
+      objeto: Valor Despesa Liquidada
+      decimalChar: ','
     - name: DTATUALIZACAO
       type: datetime
       format: "%Y/%m/%d %H:%M:%S"
