@@ -11,9 +11,12 @@ fields:
         minimum: 1
         maximum: 999
     - name: ACACod
-      type: string
+      type: integer
       assunto: Funcional Programática
       objeto: ProjetoAtividade - Código
+      constraints:
+        minimum: 1000
+        maximum: 9999
     - name: SACCod
       type: integer
       assunto:
