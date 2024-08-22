@@ -32,8 +32,8 @@ fields:
     - name: Valor Despesa Empenhada
       type: number
       decimalChar: ','
-      assunto: DESPESA REALIZADA CONSOLIDADA
+      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA"
     - name: Valor Despesa Liquidada
       type: number
       decimalChar: ','
-      assunto: DESPESA REALIZADA CONSOLIDADA
+      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA"

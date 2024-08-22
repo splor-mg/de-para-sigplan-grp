@@ -9,6 +9,7 @@ fields:
       assunto: Unidade Orçamentária
     - name: UnidadeOrçam - Nome
       type: string
+      assunto: Unidade Orçamentária
     - name: UnidadeOrçam - Sigla
       type: string
       assunto: Unidade Orçamentária

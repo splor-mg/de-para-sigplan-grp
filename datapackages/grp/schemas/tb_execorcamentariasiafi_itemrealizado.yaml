@@ -1,62 +1,142 @@
 fields:
     - name: Ano de Exercício
-      type: integer
-    - name: ElementoItem - Código
-      type: integer
-    - name: ElementoItem - Descrição
-      type: string
+      type: year
+      assunto: Exercício
     - name: UnidadeOrçam - Código
-      type: integer
+      type: string
+      constraints:
+        pattern: "\\d{5}"
+      assunto: Unidade Orçamentária
     - name: UnidadeOrçam - Nome
       type: string
+      assunto: Unidade Orçamentária
     - name: UnidadeOrçam - Sigla
       type: string
+      assunto: Unidade Orçamentária
     - name: Função - Código
       type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 1
+        maximum: 99
     - name: Função - Descrição
       type: string
+      assunto: Funcional Programática
     - name: Subfunção - Código
       type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 10
+        maximum: 999
     - name: Subfunção - Descrição
       type: string
+      assunto: Funcional Programática
     - name: Programa - Código
       type: integer
+      constraints:
+        minimum: 1
+        maximum: 999
+      assunto: Funcional Programática
     - name: Programa - Descrição
       type: string
+      assunto: Funcional Programática
     - name: ProjetoAtividade - Código
       type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 1000
+        maximum: 9999   
     - name: ProjetoAtividade - Descrição
       type: string
+      assunto: Funcional Programática  
     - name: GrupoDespesa - Código
       type: integer
+      assunto: Natureza de Despesa
+      constraints:
+        enum:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 9 
     - name: GrupoDespesa - Descrição
       type: string
+      assunto: Natureza de Despesa
     - name: Modalidade - Código
       type: integer
+      assunto: Natureza de Despesa 
+      constraints:
+        minimum: 20
+        maximum: 99
     - name: Modalidade - Descrição
       type: string
+      assunto: Natureza de Despesa 
     - name: IAG - Código
       type: integer
+      assunto: Funcional Programática
+      constraints:
+        enum:
+          - 0
+          - 1
     - name: IAG - Descrição
       type: string
+      assunto: Funcional Programática
     - name: FonteRecurso - Código
-      type: integer
+      type: string
+      assunto: Natureza de Despesa
+      constraints:
+        pattern: "\\d{6}"
     - name: FonteRecurso - Descrição
       type: string
+      assunto: Natureza de Despesa
     - name: IPU - Código
       type: integer
+      type: integer
+      assunto: Procedência e Uso - IPU
+      constraints:
+        minimum: 0
+        maximum: 9
     - name: IPU - Descrição
       type: string
+      assunto: Procedência e Uso - IPU
     - name: GIGFP - Código
-      type: integer
+      type: string
+      assunto: GIGFP
+      constraints:
+        pattern: "\\d{12}"
     - name: CategoriaEconômica - Código
       type: integer
+      assunto: Natureza de Despesa
+      constraints:
+        enum:
+          - 3
+          - 4
+          - 9 
     - name: CategoriaEconômica - Descrição
       type: string
+      assunto: Natureza de Despesa
     - name: ElementoDespesa - Código
       type: integer
+      assunto: Natureza de Despesa
+      constraints:
+        minimum: 0
+        maximum: 99
     - name: ElementoDespesa - Descrição
       type: string
-    - name: Valor Despesa Realizada
+      assunto: Natureza de Despesa
+    - name: ElementoItem - Código
       type: integer
+      assunto: Natureza de Despesa
+      constraints:
+        minimum: 1000
+        maximum: 99999
+    - name: ElementoItem - Descrição
+      type: string
+      assunto: Natureza de Despesa
+    - name: Valor Despesa Realizada
+      type: number
+      assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA" 
+      decimalChar: ','
       

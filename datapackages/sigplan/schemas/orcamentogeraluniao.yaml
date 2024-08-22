@@ -125,12 +125,12 @@ fields:
     - name: OGUVlrEmpenhado
       type: number
       decimalChar: ','
-      assunto: DESPESA REALIZADA CONSOLIDADA
+      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA"
       objeto: Valor Despesa Empenhada
     - name: OGUVlrEmpenhoLiquidado
       type: number
       decimalChar: ','
-      assunto: DESPESA REALIZADA CONSOLIDADA
+      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA"
       objeto: Valor Despesa Liquidada
     - name: OGUVlrRestosInscrito
       type: number
