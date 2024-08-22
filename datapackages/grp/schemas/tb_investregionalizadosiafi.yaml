@@ -1,30 +1,76 @@
 fields:
     - name: UnidadeOrçam - Código
-      type: integer
+      type: string
+      constraints:
+        pattern: "\\d{5}"
     - name: UnidadeOrçam - Nome
       type: string
+      assunto: Unidade Orçamentária
     - name: Programa - Código
       type: integer
+      constraints:
+        minimum: 1
+        maximum: 999
     - name: Programa - Descrição
       type: string
+      assunto: Funcional Programática
     - name: ProjetoAtividade - Código
       type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 1000
+        maximum: 9999 
     - name: ProjetoAtividade - Descrição
       type: string
+      assunto: Funcional Programática  
     - name: GrupoDespesa - Código
       type: integer
+      assunto: Natureza de Despesa
+      constraints:
+        enum:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 9 
     - name: Município Regionalização - Código
-      type: integer
+      type: string
+      objeto: Município Regionalização - Código
+      constraints:
+        pattern: "\\d{6}"
     - name: Município Regionalização - Nome
       type: string
+      assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA"
+    - name: GrupoDespesa - Código
+      assunto: Natureza de Despesa
+      constraints:
+        enum:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 9 
     - name: GrupoDespesa - Descrição
       type: string
+      assunto: Natureza de Despesa
     - name: Mês - Numérico
       type: integer
+      assunto: Exercício
+      constraints:
+        minimum: 1
+        maximum: 12
     - name: Mês - Descritivo
       type: string
+      assunto: Exercício
     - name: Ano de Exercício
-      type: integer
+      type: year
+      assunto: Exercício
     - name: Valor Despesa Liquidada
-      type: string
+      type: number
+      decimalChar: ','
+      assunto: "EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA"
       
