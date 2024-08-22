@@ -4,6 +4,7 @@ fields:
       assunto: Exercício
     - name: Programa - Código
       type: integer
+      assunto: Funcional Programática
     - name: ProjetoAtividade - Código
       type: integer
       assunto: Funcional Programática
@@ -12,28 +13,23 @@ fields:
       assunto: Unidade Orçamentária
       constraints:
         pattern: "\\d{5}"
-    - name: Função - Código
-      type: integer
-      assunto: Funcional Programática
-      constraints:
-        minimum: 1
-        maximum: 99
-    - name: Subfunção - Código
-      type: integer
-      assunto: Funcional Programática
-      constraints:
-        minimum: 10
-        maximum: 999
     - name: FonteRecurso - Código
       type: string
       assunto: Natureza de Despesa
       constraints:
         pattern: "\\d{6}"
+    - name: Valor Crédito Inicial
+      type: number
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
+    - name: Valor Crédito Autorizado
+      type: number
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
     - name: Valor Despesa Empenhada
       type: number
-      decimalChar: ','
-      assunto: DESPESA REALIZADA CONSOLIDADA
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
     - name: Valor Despesa Liquidada
       type: number
-      decimalChar: ','
-      assunto: DESPESA REALIZADA CONSOLIDADA
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
+    - name: Valor Despesa Paga
+      type: number
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
