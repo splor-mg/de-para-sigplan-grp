@@ -88,7 +88,7 @@ fields:
       decimalChar: ','
     - name: DTATUALIZACAO
       type: datetime
-      format: "%Y/%m/%d %H:%M:%S"
+      format: "%d/%m/%Y %H:%M"
       assunto:
       objeto:
       nota:
