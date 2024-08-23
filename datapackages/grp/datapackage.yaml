@@ -1,13 +1,22 @@
 resources:
-  - name: orcamentogeraluniao
+  - name: orcamentogeraluniao_a
     type: table
-    path: data-raw/orcamentogeraluniao.csv
+    path: data-raw/orcamentogeraluniao_a.csv
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/orcamentogeraluniao.yaml      
+    schema: schemas/orcamentogeraluniao_a.yaml      
+  - name: orcamentogeraluniao_b
+    type: table
+    path: data-raw/orcamentogeraluniao_b.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/orcamentogeraluniao_b.yaml
   - name: tb_execorcamentariasiafi
     type: table
     path: data-raw/tb_execorcamentariasiafi.csv

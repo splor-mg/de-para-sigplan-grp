@@ -1,0 +1,25 @@
+fields:
+    - name: Ano de Exercício
+      type: year
+      assunto: Exercício
+    - name: Programa - Código
+      type: integer
+    - name: ProjetoAtividade - Código
+      type: integer
+      assunto: Funcional Programática
+    - name: UnidadeOrçam - Código
+      type: string
+      assunto: Unidade Orçamentária
+      constraints:
+        pattern: "\\d{5}"
+    - name: FonteRecurso - Código
+      type: string
+      assunto: Natureza de Despesa
+      constraints:
+        pattern: "\\d{6}"
+    - name: Valor RPP Inscrito
+      type: number
+      assunto: E X E C U Ç Ã O - D E - R E S T O S - A - P A G A R/RESTOS A PAGAR
+    - name: Valor RPNP Inscrito
+      type: number
+      assunto: E X E C U Ç Ã O - D E - R E S T O S - A - P A G A R/RESTOS A PAGAR
