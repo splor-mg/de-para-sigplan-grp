@@ -41,11 +41,10 @@ fields:
       type: string
       assunto: Funcional Programática
     - name: ProjetoAtividade - Código
-      type: integer
+      type: string
       assunto: Funcional Programática
       constraints:
-        minimum: 1000
-        maximum: 9999
+        pattern: "\\d{4}"
     - name: ProjetoAtividade - Descrição
       type: string
       assunto: Funcional Programática
@@ -65,11 +64,10 @@ fields:
       type: string
       assunto: Natureza de Despesa
     - name: Modalidade - Código
-      type: integer
+      type: string
       assunto: Natureza de Despesa 
       constraints:
-        minimum: 20
-        maximum: 99
+        pattern: "\\d{2}"
     - name: Modalidade - Descrição
       type: string
       assunto: Natureza de Despesa 
@@ -120,7 +118,7 @@ fields:
       type: integer
       assunto: Natureza de Despesa
       constraints:
-        minimum: 0
+        minimum: 1
         maximum: 99
     - name: ElementoDespesa - Descrição
       type: string
@@ -129,28 +127,28 @@ fields:
       type: integer
       assunto: Natureza de Despesa
       constraints:
-        minimum: 1000
+        minimum: 1001
         maximum: 99999
     - name: ElementoItem - Descrição
       type: string
       assunto: Natureza de Despesa
     - name: Valor Crédito Inicial
       type: number
-      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
       decimalChar: ','
       groupChar: '.'
     - name: Valor Crédito Autorizado
       type: number
       decimalChar: ','
       groupChar: '.'
-      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
     - name: Valor Despesa Empenhada
       type: number
       decimalChar: ','
       groupChar: '.'
-      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
-    - name: Valor Despesa Liquidada
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
+    - name: Valor Saldo Empenho
       type: number
       decimalChar: ','
       groupChar: '.'
-      assunto: 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA'
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA

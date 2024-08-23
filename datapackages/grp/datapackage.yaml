@@ -17,15 +17,24 @@ resources:
     encoding: utf-8
     dialect: dialect.yaml
     schema: schemas/orcamentogeraluniao_b.yaml
-  - name: tb_execorcamentariasiafi
+  - name: tb_execorcamentariasiafi_a
     type: table
-    path: data-raw/tb_execorcamentariasiafi.csv
+    path: data-raw/tb_execorcamentariasiafi_a.csv
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/tb_execorcamentariasiafi.yaml      
+    schema: schemas/tb_execorcamentariasiafi_a.yaml
+  - name: tb_execorcamentariasiafi_b
+    type: table
+    path: data-raw/tb_execorcamentariasiafi_b.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/tb_execorcamentariasiafi_b.yaml        
   - name: tb_execorcamentariasiafi_itemrealizado
     type: table
     path: data-raw/tb_execorcamentariasiafi_itemrealizado.csv
