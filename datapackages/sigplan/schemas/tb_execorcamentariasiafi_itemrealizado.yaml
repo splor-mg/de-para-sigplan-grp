@@ -157,18 +157,15 @@ fields:
       objeto: ElementoDespesa - Descrição
     - name: CODIGO_ITEM
       type: integer
-      assunto:
-      objeto:
+      constraints:
+        minimum: 1
+        maximum: 99
       notas:
-        - >
-          Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
+        - No armazém GRP existe 'ElementoItem', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
     - name: DESCRICAO_ITEM
       type: string
-      assunto: 
-      objeto:
       notas:
-        - >
-          Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
+        - - No armazém GRP existe 'ElementoItem', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
     - name: DESPESA_REALIZADA
       type: number
       assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA" 
