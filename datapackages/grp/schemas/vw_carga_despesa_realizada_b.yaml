@@ -1,0 +1,88 @@
+fields:
+    - name: Ano de Exercício
+      type: year
+      assunto: Exercício
+    - name: Mês - Numérico
+      type: integer
+      assunto: Exercício
+      constraints:
+        minimum: 1
+        maximum: 12
+    - name: Função - Código
+      type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 1
+        maximum: 99
+    - name: Subfunção - Código
+      type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 30
+        maximum: 999
+    - name: CategoriaEconômica - Código
+      type: integer
+      assunto: Natureza de Despesa
+      constraints:
+        enum:
+          - 3
+          - 4
+          - 9
+    - name: CategoriaEconômica - Descrição
+      type: string
+      assunto: Natureza de Despesa
+    - name: Programa - Código
+      type: string
+      assunto: Natureza de Despesa
+    - name: ProjetoAtividade - Código
+      type: string
+      assunto: Natureza de Despesa
+      constraints:
+        pattern: "\\d{4}" 
+    - name: GrupoDespesa - Código
+      type: integer
+      constraints:
+        enum:
+          - 1
+          - 2
+          - 3
+          - 4
+          - 5
+          - 6
+          - 9
+      assunto: Natureza de Despesa
+    - name: GrupoDespesa - Descrição
+      type: string
+      assunto: Natureza de Despesa
+    - name: Modalidade - Código
+      type: string
+      constraints:
+        pattern: "\\d{2}"
+      assunto: Natureza de Despesa
+    - name: Modalidade - Descrição
+      type: string
+      assunto: Natureza de Despesa
+    - name: ElementoDespesa - Código
+      type: integer
+      assunto: Natureza de Despesa
+      constraints:
+        minimum: 0
+        maximum: 99
+    - name: ElementoDespesa - Descrição
+      type: string
+      assunto: Natureza de Despesa
+    - name: ElementoItem - Código
+      type: integer
+      assunto: Natureza de Despesa
+      constraints:
+        minimum: 1000
+        maximum: 99999
+    - name: ElementoItem - Descrição
+      type: string
+      assunto: Natureza de Despesa
+    - name: Valor Despesa Realizada
+      type: number
+      assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA
+      decimalChar: ','
+      groupChar: '.'
+      

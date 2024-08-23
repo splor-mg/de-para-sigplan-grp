@@ -62,12 +62,21 @@ resources:
     encoding: utf-8
     dialect: dialect.yaml
     schema: schemas/tmp_dadofinanceiromensal.yaml     
-  - name: vw_carga_despesa_realizada
+  - name: vw_carga_despesa_realizada_a
     type: table
-    path: data-raw/vw_carga_despesa_realizada.csv
+    path: data-raw/vw_carga_despesa_realizada_a.csv
     scheme: file
     format: csv
     mediatype: text/csv
     encoding: utf-8
     dialect: dialect.yaml
-    schema: schemas/vw_carga_despesa_realizada.yaml
+    schema: schemas/vw_carga_despesa_realizada_a.yaml
+  - name: vw_carga_despesa_realizada_b
+    type: table
+    path: data-raw/vw_carga_despesa_realizada_b.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/vw_carga_despesa_realizada_b.yaml
