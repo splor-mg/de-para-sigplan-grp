@@ -113,12 +113,11 @@ fields:
       assunto: Fonte de Recurso
       objeto: FonteRecurso - Descrição
     - name: CDPROCEDENCIA
-      type: integer
+      type: string
       assunto: Procedência e Uso - IPU
       objeto: IPU - Código
       constraints:
-        minimum: 0
-        maximum: 9
+        pattern: "\\d{1}"
     - name: DSPROCEDENCIA
       type: string
       assunto: Procedência e Uso - IPU

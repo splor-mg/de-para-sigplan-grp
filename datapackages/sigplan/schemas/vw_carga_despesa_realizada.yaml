@@ -11,12 +11,11 @@ fields:
         minimum: 1
         maximum: 12
     - name: UO
-      type: integer
+      type: string
       assunto: Unidade Orçamentária
       objeto: UnidadeOrçam - Código
       constraints:
-        minimum: 1000
-        maximum: 9999
+        pattern: "\\d{4}"
     - name: PROGRAMA
       type: integer
       objeto: Programa - Código
@@ -24,12 +23,11 @@ fields:
         minimum: 1
         maximum: 999
     - name: PROJATIVIDADE
-      type: integer
+      type: string
       assunto: Funcional Programática
       objeto: ProjetoAtividade - Código
       constraints:
-        minimum: 1000
-        maximum: 9999
+        pattern: "\\d{4}"
     - name: FUNCAO
       type: integer
       assunto: Funcional Programática
@@ -76,12 +74,11 @@ fields:
       assunto: Natureza de Despesa
       objeto: GrupoDespesa - Descrição
     - name: MODALIDADE
-      type: integer
+      type: string
       assunto: Natureza de Despesa 
       objeto: Modalidade - Código
       constraints:
-        minimum: 20
-        maximum: 99
+        pattern: "\\d{2}"
     - name: DSMODALIDADE
       type: string
       assunto: Natureza de Despesa
@@ -101,15 +98,13 @@ fields:
       type: integer
       assunto:
       objeto:
-        - >
-          Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
+        - No armazém GRP há 'ElementoItem', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
     - name: DSITEM
       type: string
       assunto:
       objeto:
       notas:
-        - >
-          Em 'Natureza de Despesa' não existe 'Item de Despesa', mas sim o 'ElementoItem - Código', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
+        - No armazém GRP há 'ElementoItem', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
     - name: IDORCAMENTO
       type: integer
       assunto: Funcional Programática
@@ -123,29 +118,28 @@ fields:
       assunto: Fonte de Recurso 
       objeto: FonteRecurso - Código
       constraints:
-        minimum: 01
+        minimum: 1
         maximum: 99
       notas:
         - Verificar se é pra considerar no armazém GRP 'FonteRecurso - Código', que tem 6 dígitos, ou 'GrupoFonte - Código', que tem 2 dígitos.
     - name: PROCEDENCIA
-      type: integer
+      type: string
       assunto: Procedência e Uso - IPU
       objeto: IPU - Código
       constraints:
-        minimum: 0
-        maximum: 9
+        pattern: "\\d{1}"
     - name: DSPROCEDENCIA
       type: string
       assunto: Procedência e Uso - IPU
       objeto: IPU - Descrição
     - name: EMPENHADO
       type: number
-      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA"
+      assunto: E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA
       objeto: Valor Despesa Empenhada
       decimalChar: '.' 
     - name: LIQUIDADO
       type: number
-      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA"
+      assunto: E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA
       objeto: Valor Despesa Liquidada 
       decimalChar: '.'
     - name: REALIZADO
@@ -154,6 +148,4 @@ fields:
       objeto:
       decimalChar: '.'
       notas:
-        - >
-          Em 'EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA' existe 'Despesa Liquidada'. 'Despesa Realizada' está em 'EXECUÇÃO-ORÇAMENTÁRIA-DA-DESPESA / DESPESA REALIZADA CONSOLIDADA', 
-          ou seja,não pode ser gerada junto das demais medidas como 'Valor Despesa Empenhada' e 'Valor Despesa Liquidada'.
+        - Despesa Realizada está em assunto diferente das demais métricas.
