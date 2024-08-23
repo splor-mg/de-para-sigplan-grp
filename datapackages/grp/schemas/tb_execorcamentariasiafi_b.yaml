@@ -90,11 +90,10 @@ fields:
       type: string
       assunto: Natureza de Despesa
     - name: IPU - Código
-      type: integer
+      type: string
       assunto: Procedência e Uso - IPU
       constraints:
-        minimum: 0
-        maximum: 9
+        pattern: "\\d{2}"
     - name: IPU - Descrição
       type: string
       assunto: Procedência e Uso - IPU
