@@ -35,11 +35,10 @@ fields:
       type: string
       assunto: Natureza de Despesa
     - name: ProjetoAtividade - Código
-      type: integer
+      type: string
       assunto: Natureza de Despesa
       constraints:
-        minimum: 1000
-        maximum: 9999
+        pattern: "\\d{4}" 
     - name: GrupoDespesa - Código
       type: integer
       constraints:
@@ -56,10 +55,9 @@ fields:
       type: string
       assunto: Natureza de Despesa
     - name: Modalidade - Código
-      type: integer
+      type: string
       constraints:
-        minimum: 20
-        maximum: 99
+        pattern: "\\d{2}"
       assunto: Natureza de Despesa
     - name: Modalidade - Descrição
       type: string
@@ -76,6 +74,9 @@ fields:
     - name: ElementoItem - Código
       type: integer
       assunto: Natureza de Despesa
+      constraints:
+        minimum: 1000
+        maximum: 99999
     - name: ElementoItem - Descrição
       type: string
       assunto: Natureza de Despesa
@@ -83,9 +84,9 @@ fields:
       type: number
       decimalChar: ','
       groupChar: '.'
-      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA"
+      assunto: E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA
     - name: Valor Despesa Liquidada
       type: number
       decimalChar: ','
       groupChar: '.'
-      assunto: "E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA"
+      assunto: E X E C U Ç Ã O - C O N S O L I D A D A/EXECUÇÃO CONSOLIDADA DA DESPESA

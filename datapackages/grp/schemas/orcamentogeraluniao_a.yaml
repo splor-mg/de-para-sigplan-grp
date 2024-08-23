@@ -4,20 +4,26 @@ fields:
       assunto: Exercício
     - name: Programa - Código
       type: integer
+      assunto: Funcional Programática
+      constraints:
+        minimum: 1
+        maximum: 999
     - name: ProjetoAtividade - Código
-      type: integer
+      type: string
+      constraints:
+        pattern: "\\d{4}"
       assunto: Funcional Programática
     - name: UnidadeOrçam - Código
       type: string
-      assunto: Unidade Orçamentária
       constraints:
         pattern: "\\d{5}"
     - name: FonteRecurso - Código
+      assunto: Unidade Orçamentária
       type: string
-      assunto: Natureza de Despesa
       constraints:
         pattern: "\\d{6}"
     - name: Valor Crédito Inicial
+      assunto: Natureza de Despesa
       type: number
       assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
     - name: Valor Crédito Autorizado

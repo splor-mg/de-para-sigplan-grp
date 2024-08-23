@@ -41,11 +41,10 @@ fields:
       type: string
       assunto: Funcional Programática
     - name: ProjetoAtividade - Código
-      type: integer
+      type: string
       assunto: Funcional Programática
       constraints:
-        minimum: 1000
-        maximum: 9999   
+        pattern: "\\d{4}"  
     - name: ProjetoAtividade - Descrição
       type: string
       assunto: Funcional Programática  
@@ -65,11 +64,10 @@ fields:
       type: string
       assunto: Natureza de Despesa
     - name: Modalidade - Código
-      type: integer
+      type: string
       assunto: Natureza de Despesa 
       constraints:
-        minimum: 20
-        maximum: 99
+        pattern: "\\d{2}"
     - name: Modalidade - Descrição
       type: string
       assunto: Natureza de Despesa 
@@ -137,6 +135,6 @@ fields:
       assunto: Natureza de Despesa
     - name: Valor Despesa Realizada
       type: number
-      assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA" 
+      assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA
       decimalChar: ','
       
