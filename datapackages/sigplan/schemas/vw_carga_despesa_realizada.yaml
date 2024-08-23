@@ -144,8 +144,8 @@ fields:
       decimalChar: '.'
     - name: REALIZADO
       type: number
-      assunto:
-      objeto:
+      assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA
+      objeto: Valor Despesa Realizada
       decimalChar: '.'
       notas:
         - Despesa Realizada está em assunto diferente das demais métricas.
