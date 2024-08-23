@@ -113,30 +113,12 @@ fields:
     - name: CategoriaEconômica - Descrição
       type: string
       assunto: Natureza de Despesa
-    - name: ElementoDespesa - Código
-      type: integer
-      assunto: Natureza de Despesa
-      constraints:
-        minimum: 1
-        maximum: 99
-    - name: ElementoDespesa - Descrição
-      type: string
-      assunto: Natureza de Despesa
-    - name: ElementoItem - Código
-      type: integer
-      assunto: Natureza de Despesa
-      constraints:
-        minimum: 1001
-        maximum: 99999
-    - name: ElementoItem - Descrição
-      type: string
-      assunto: Natureza de Despesa
-    - name: Valor Despesa Empenhada
+    - name: Valor Crédito Inicial
       type: number
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
       decimalChar: ','
       groupChar: '.'
-      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
-    - name: Valor Saldo Empenho
+    - name: Valor Crédito Autorizado
       type: number
       decimalChar: ','
       groupChar: '.'
