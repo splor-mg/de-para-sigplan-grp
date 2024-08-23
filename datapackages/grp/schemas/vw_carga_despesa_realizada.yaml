@@ -13,12 +13,12 @@ fields:
       assunto: Funcional Programática
       constraints:
         minimum: 1
-        maximum: 9
+        maximum: 99
     - name: Subfunção - Código
       type: integer
       assunto: Funcional Programática
       constraints:
-        minimum: 10
+        minimum: 30
         maximum: 999
     - name: CategoriaEconômica - Código
       type: integer
