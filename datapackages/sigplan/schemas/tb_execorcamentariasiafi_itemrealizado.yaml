@@ -4,12 +4,11 @@ fields:
       assunto: Exercício
       objeto: Ano de Exercício
     - name: CDUNIDADE_ORCAM
-      type: integer
+      type: string
       assunto: Unidade Orçamentária
       objeto: UnidadeOrçam - Código
       constraints:
-        minimum: 1000
-        maximum: 9999
+        pattern: "\\d{4}"
     - name: DSUNIDADE_ORCAM
       type: string
       assunto: Unidade Orçamentária
@@ -52,12 +51,11 @@ fields:
       assunto: Funcional Programática
       objeto: Programa - Descrição
     - name: CDPROJATIVIDADE
-      type: integer
+      type: string
       assunto: Funcional Programática
       objeto: ProjetoAtividade - Código
       constraints:
-        minimum: 1000
-        maximum: 9999
+        pattern: "\\d{4}"
     - name: DSPROJATIVIDADE
       type: string
       assunto: Funcional Programática
@@ -80,12 +78,11 @@ fields:
       assunto: Natureza de Despesa
       objeto: GrupoDespesa - Descrição 
     - name: CDMODALIDADE
-      type: integer
+      type: string
       assunto: Natureza de Despesa 
       objeto: Modalidade - Código
       constraints:
-        minimum: 20
-        maximum: 99
+        pattern: "\\d{2}"
     - name: DSMODALIDADE
       type: string
       assunto: Natureza de Despesa
@@ -107,7 +104,7 @@ fields:
       assunto: Fonte de Recurso 
       objeto: FonteRecurso - Código
       constraints:
-        minimum: 01
+        minimum: 1
         maximum: 99
       notas:
         - Verificar se é pra considerar no armazém GRP 'FonteRecurso - Código', que tem 6 dígitos, ou 'GrupoFonte - Código', que tem 2 dígitos.
