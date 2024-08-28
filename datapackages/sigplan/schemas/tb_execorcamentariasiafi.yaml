@@ -178,9 +178,11 @@ fields:
         - Despesa Realizada está em assunto diverso das demais medidas.
     - name: SALDO_EMPENHADO
       type: number
-      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
-      objeto: Valor Saldo Empenho 
-      decimalChar: ','
+      constraints:
+        enum: 
+          - 0
+      notas: 
+        - Coluna preenchida somente com valor '0'
     - name: DTATUALIZACAO
       type: datetime 
       format: "%d/%m/%Y %H:%S"
