@@ -31,13 +31,15 @@ fields:
       objeto: ProjetoAtividade - Descrição
     - name: CDIBGE
       type: string
-      assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA LIQUIDADA
       objeto: Município Regionalização - Código
       constraints:
         pattern: "\\d{6}"
+      notas:
+        - O GRP utiliza o formato de 7 dígitos para o código do IBGE
     - name: NMMUNICIPIO
       type: string
-      assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA LIQUIDADA
       objeto: Município Regionalização - Nome 
     - name: CDREGIAO
       type: integer
@@ -74,23 +76,25 @@ fields:
     - name: DSMES
       type: string
       assunto: Exercício
-      objeto: Mês - Descritivo 
+      objeto: Mês - Descritivo
     - name: VLLIQUIDADO
       type: number
-      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA LIQUIDADA
       objeto: Valor Despesa Liquidada
       decimalChar: ','
     - name: DTATUALIZACAO
       type: datetime
       format: "%d/%m/%Y %H:%M"
       nota:
-        - Campo não encontrado no armazém GRP.
+        - Campo interno
     - name: ANO
       type: year
       assunto: Exercício
       objeto: Ano de Exercício
     - name: USUCOD
       type: string
-      nota:
-        - Campo não encontrado no armazém GRP.
-      
+      constraints:
+        enum: 
+          - "NULL"
+      notas: 
+        - Coluna preenchida somente com valor 'NULL'
