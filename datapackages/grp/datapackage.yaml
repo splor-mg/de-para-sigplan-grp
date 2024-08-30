@@ -26,15 +26,6 @@ resources:
     encoding: utf-8
     dialect: dialect.yaml
     schema: schemas/tb_execorcamentariasiafi_b.yaml
-  - name: tb_execorcamentariasiafi_c
-    type: table
-    path: data-raw/tb_execorcamentariasiafi_c.csv
-    scheme: file
-    format: csv
-    mediatype: text/csv
-    encoding: utf-8
-    dialect: dialect.yaml
-    schema: schemas/tb_execorcamentariasiafi_c.yaml        
   - name: tb_execorcamentariasiafi_itemrealizado
     type: table
     path: data-raw/tb_execorcamentariasiafi_itemrealizado.csv

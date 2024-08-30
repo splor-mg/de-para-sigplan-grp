@@ -83,12 +83,12 @@ fields:
       assunto: Funcional Programática
     - name: FonteRecurso - Código
       type: string
-      assunto: Natureza de Despesa
+      assunto: Fonte de Recurso
       constraints:
         pattern: "\\d{6}"
     - name: FonteRecurso - Descrição
       type: string
-      assunto: Natureza de Despesa
+      assunto: Fonte de Recurso
     - name: IPU - Código
       type: string
       assunto: Procedência e Uso - IPU
@@ -131,8 +131,15 @@ fields:
     - name: ElementoItem - Descrição
       type: string
       assunto: Natureza de Despesa
+    - name: Valor Despesa Empenhada
+      type: number
+      decimalChar: ','
+      groupChar: '.'
     - name: Valor Despesa Realizada
       type: number
       assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA
       decimalChar: ','
       groupChar: '.'
+missingValues: 
+  - "N/A"
+  - "-3"
