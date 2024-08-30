@@ -167,15 +167,13 @@ fields:
     - name: DESPESA_EMPENHADA
       type: number
       decimalChar: ','
-      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
       objeto: Valor Despesa Empenhada
     - name: DESPESA_REALIZADA
       type: number
-      assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
       objeto: Valor Despesa Realizada 
       decimalChar: ','
-      notas:
-        - Despesa Realizada está em assunto diverso das demais medidas.
     - name: SALDO_EMPENHADO
       type: number
       constraints:
