@@ -9,6 +9,8 @@ fields:
       objeto: UnidadeOrçam - Código
       constraints:
         pattern: "\\d{4}"
+      notas:
+        - Do ponto de vista de negócio a unidade orçamentária teve alteração de 4 para 5 dígitos
     - name: DSUNIDADE_ORCAM
       type: string
       assunto: Unidade Orçamentária
@@ -23,7 +25,7 @@ fields:
       objeto: Função - Código
       constraints:
         minimum: 1
-        maximum: 99
+        maximum: 28 # função 99 não possui execução orçamentária
     - name: DSFUNCAO
       type: string
       assunto: Funcional Programática
@@ -99,6 +101,12 @@ fields:
       type: string
       assunto: Funcional Programática
       objeto: IAG - Descrição 
+      constraints:
+        enum:
+          - PROJETO ESTRUTURADOR
+          - PROJETO NAO ESTRUTURADOR
+      notas: 
+        - Os valores possíveis para essa coluna não são mais os mesmos
     - name: CDFONTE
       type: integer
       assunto: Fonte de Recurso 
@@ -107,7 +115,7 @@ fields:
         minimum: 1
         maximum: 99
       notas:
-        - Verificar se é pra considerar no armazém GRP 'FonteRecurso - Código', que tem 6 dígitos, ou 'GrupoFonte - Código', que tem 2 dígitos.
+        - Verificar se 'GrupoFonte - Código' deve entrar no mapeamento (atualmente não foi)
     - name: DSFONTE
       type: string
       assunto: Fonte de Recurso
@@ -128,8 +136,7 @@ fields:
       constraints:
         pattern: "\\d{7}"
       notas:
-        - >
-         No armazém GRP não há GMIFP, mas GIFP, ou seja, Modalidade não compõe o código.
+        - No armazém GRP não há GMIFP, mas GIFP, ou seja, Modalidade não compõe o código e Grupo da Fonte compõe
     - name: CDCATEGORIA
       type: integer
       assunto: Natureza de Despesa
@@ -138,7 +145,6 @@ fields:
         enum:
           - 3
           - 4
-          - 9 
     - name: DSCATEGORIA
       type: string
       assunto: Natureza de Despesa
@@ -148,7 +154,7 @@ fields:
       assunto: Natureza de Despesa
       objeto: ElementoDespesa - Código
       constraints:
-        minimum: 0
+        minimum: 1
         maximum: 99
     - name: DSELEMENTO
       type: string
@@ -157,22 +163,24 @@ fields:
     - name: CODIGO_ITEM
       type: integer
       constraints:
-        minimum: 0
+        minimum: 0 # item 0 é utilizado exclusivamente pelas empresas estatais dependentes ("EMATER", "EPAMIG", "EMC")
         maximum: 99
+      assunto: Natureza de Despesa
+      objeto: ElementoItem - Código
       notas:
-        - No armazém GRP existe 'ElementoItem', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
+        - O item de despesa não está disponível de forma isolada no Armazém GRP
+        - Do ponto de vista de negócio o item de despesa teve alteração de 2 para 3 dígitos
     - name: DESCRICAO_ITEM
       type: string
-      notas:
-        - No armazém GRP existe 'ElementoItem', que é junção de 'Elemento Despesa' e 'Item de Despesa'.
+      assunto: Natureza de Despesa
+      objeto: ElementoItem - Descrição
     - name: DESPESA_REALIZADA
       type: number
-      assunto: "E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA" 
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
       objeto: Valor Despesa Realizada
       decimalChar: ','
     - name: DTATUALIZACAO
       type: datetime 
       format: "%d/%m/%Y %H:%M"
       notas:
-        - Campo não encontrado no armazém GRP.
-      
+        - Campo interno

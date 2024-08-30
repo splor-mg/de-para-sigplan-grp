@@ -95,10 +95,18 @@ fields:
         enum:
           - 0
           - 1
+      notas:
+        - Mapeamento realizado com base na combinação entre os valores da coluna IDORCAMENTO e DSORCAMENTO
     - name: DSORCAMENTO
       type: string
       assunto: Funcional Programática
-      objeto: IAG - Descrição 
+      objeto: IAG - Descrição
+      constraints:
+        enum:
+          - PROJETO ESTRUTURADOR
+          - PROJETO NAO ESTRUTURADOR
+      notas: 
+        - Os valores possíveis para essa coluna foram alterados
     - name: CDFONTE
       type: integer
       assunto: Fonte de Recurso 

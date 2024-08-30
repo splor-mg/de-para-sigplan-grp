@@ -81,6 +81,10 @@ fields:
     - name: IAG - Descrição
       type: string
       assunto: Funcional Programática
+      constraints:
+        enum:
+          - PROJETOS ESTRATÉGICOS
+          - DEMAIS PROJETOS E ATIVIDADES
     - name: FonteRecurso - Código
       type: string
       assunto: Natureza de Despesa
