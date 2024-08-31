@@ -1,0 +1,75 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    assunto: Exercício
+  - name: Mês - Numérico
+    type: integer
+    assunto: Exercício
+  - name: UnidadeOrçam - Código
+    type: integer
+    assunto: Unidade Orçamentária
+  - name: Programa - Código
+    type: integer
+    assunto: Funcional Programática
+  - name: ProjetoAtividade - Código
+    type: integer
+    assunto: Funcional Programática
+  - name: Função - Código
+    type: integer
+    assunto: Funcional Programática
+  - name: Subfunção - Código
+    type: integer
+    assunto: Funcional Programática
+  - name: CategoriaEconômica - Código
+    type: integer
+    assunto: Natureza de Despesa
+  - name: CategoriaEconômica - Descrição
+    type: string
+    assunto: Natureza de Despesa
+  - name: GrupoDespesa - Código
+    type: integer
+    assunto: Natureza de Despesa
+  - name: GrupoDespesa - Descrição
+    type: string
+    assunto: Natureza de Despesa
+  - name: Modalidade - Código
+    type: integer
+    assunto: Natureza de Despesa
+  - name: Modalidade - Descrição
+    type: string
+    assunto: Natureza de Despesa
+  - name: ElementoDespesa - Código
+    type: integer
+    assunto: Natureza de Despesa
+  - name: ElementoDespesa - Descrição
+    type: string
+    assunto: Natureza de Despesa
+  - name: ElementoItem - Código
+    type: integer
+    assunto: Natureza de Despesa
+  - name: ElementoItem - Descrição
+    type: string
+    assunto: Natureza de Despesa
+  - name: IAG - Código
+    type: integer
+    assunto: Funcional Programática
+  - name: FonteRecurso - Código
+    type: integer
+    assunto: Fonte de Recurso
+  - name: IPU - Código
+    type: integer
+    assunto: Procedência e Uso - IPU
+  - name: IPU - Descrição
+    type: string
+    assunto: Procedência e Uso - IPU
+  - name: Valor Despesa Empenhada
+    type: number
+    assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
+  - name: Valor Despesa Liquidada
+    type: number
+    assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
+  - name: Valor Despesa Realizada
+    type: number
+    assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
+missingValues:
+  - "N/A"
