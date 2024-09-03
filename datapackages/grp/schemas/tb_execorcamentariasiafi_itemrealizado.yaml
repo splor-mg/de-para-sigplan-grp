@@ -81,6 +81,10 @@ fields:
     - name: IAG - Descrição
       type: string
       assunto: Funcional Programática
+      constraints:
+        enum:
+          - PROJETOS ESTRATÉGICOS
+          - DEMAIS PROJETOS E ATIVIDADES
     - name: FonteRecurso - Código
       type: string
       assunto: Natureza de Despesa
@@ -133,6 +137,6 @@ fields:
       assunto: Natureza de Despesa
     - name: Valor Despesa Realizada
       type: number
-      assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A/DESPESA REALIZADA CONSOLIDADA
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
       decimalChar: ','
       

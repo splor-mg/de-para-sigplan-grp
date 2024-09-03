@@ -158,5 +158,8 @@ fields:
         - Coluna preenchida somente com valor '0'
     - name: ACACodCompleto
       type: string
+      constraints:
+        enum: 
+          - "NULL"
       notas: 
-        - Coluna preenchida somente com valore 'NULL'
+        - Coluna preenchida somente com valor 'NULL'

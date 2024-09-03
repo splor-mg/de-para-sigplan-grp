@@ -36,12 +36,14 @@ fields:
           - 9 
     - name: Município Regionalização - Código
       type: string
-      objeto: Município Regionalização - Código
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA LIQUIDADA
       constraints:
-        pattern: "\\d{6}"
+        pattern: "\\d{7}"
+      missingValues:
+        - "-3"
     - name: Município Regionalização - Nome
       type: string
-      assunto: E X E C U Ç Ã O - O R Ç A M E N T Á R I A - D A - D E S P E S A / DESPESA LIQUIDADA
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA LIQUIDADA
     - name: GrupoDespesa - Descrição
       type: string
       assunto: Natureza de Despesa
@@ -60,5 +62,4 @@ fields:
     - name: Valor Despesa Liquidada
       type: number
       decimalChar: ','
-      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
-      
+      assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA LIQUIDADA

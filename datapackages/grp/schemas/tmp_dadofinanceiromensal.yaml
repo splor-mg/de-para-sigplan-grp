@@ -28,4 +28,6 @@ fields:
       type: number
       assunto:  E X E C U Ç Ã O - C O N S O L I D A D A / EXECUÇÃO CONSOLIDADA DA DESPESA
       decimalChar: ','
-      
+missingValues:
+  - "-3"
+  - "N/A"

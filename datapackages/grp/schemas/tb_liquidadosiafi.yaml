@@ -24,6 +24,8 @@ fields:
         pattern: "\\d{5}"
     - name: Valor Despesa Liquidada
       type: number
-      assunto: E X E C U Ç Ã O - C O N S O L I D A D A / EXECUÇÃO CONSOLIDADA DA DESPESA
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
       decimalChar: ','
-      
+missingValues:
+  - "-3"
+  - "N/A"

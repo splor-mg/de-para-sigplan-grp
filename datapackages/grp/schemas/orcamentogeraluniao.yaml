@@ -38,3 +38,6 @@ fields:
     - name: Valor Despesa Paga
       type: number
       assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
+missingValues:
+  - "-3"
+  - "N/A"
