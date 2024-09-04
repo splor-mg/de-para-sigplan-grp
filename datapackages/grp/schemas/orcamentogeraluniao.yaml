@@ -24,7 +24,6 @@ fields:
       constraints:
         pattern: "\\d{6}"
     - name: Valor Crédito Inicial
-      assunto: Natureza de Despesa
       type: number
       assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
     - name: Valor Crédito Autorizado

@@ -71,7 +71,6 @@ fields:
           - 9
     - name: DSGRUPO
       type: string
-      type: string
       assunto: Natureza de Despesa
       objeto: GrupoDespesa - Descrição
     - name: MODALIDADE

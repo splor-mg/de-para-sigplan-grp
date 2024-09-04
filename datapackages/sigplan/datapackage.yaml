@@ -1,7 +1,7 @@
 name: sigplan
 resources:
   - name: orcamentogeraluniao
-    type: table
+    profile: tabular-data-resource
     path: data-raw/orcamentogeraluniao.csv
     scheme: file
     format: csv
@@ -10,7 +10,7 @@ resources:
     dialect: dialect.yaml
     schema: schemas/orcamentogeraluniao.yaml
   - name: tb_execorcamentariasiafi
-    type: table
+    profile: tabular-data-resource
     path: data-raw/tb_execorcamentariasiafi.csv
     scheme: file
     format: csv
@@ -19,7 +19,7 @@ resources:
     dialect: dialect.yaml
     schema: schemas/tb_execorcamentariasiafi.yaml
   - name: tb_execorcamentariasiafi_itemrealizado
-    type: table
+    profile: tabular-data-resource
     path: data-raw/tb_execorcamentariasiafi_itemrealizado.csv
     scheme: file
     format: csv
@@ -28,7 +28,7 @@ resources:
     dialect: dialect.yaml
     schema: schemas/tb_execorcamentariasiafi_itemrealizado.yaml
   - name: tb_investregionalizadosiafi
-    type: table
+    profile: tabular-data-resource
     path: data-raw/tb_investregionalizadosiafi.csv
     scheme: file
     format: csv
@@ -37,7 +37,7 @@ resources:
     dialect: dialect.yaml
     schema: schemas/tb_investregionalizadosiafi.yaml
   - name: tb_liquidadosiafi
-    type: table
+    profile: tabular-data-resource
     path: data-raw/tb_liquidadosiafi.csv
     scheme: file
     format: csv
@@ -46,7 +46,7 @@ resources:
     dialect: dialect.yaml
     schema: schemas/tb_liquidadosiafi.yaml
   - name: tmp_dadofinanceiromensal
-    type: table
+    profile: tabular-data-resource
     path: data-raw/tmp_dadofinanceiromensal.csv
     scheme: file
     format: csv
@@ -55,7 +55,7 @@ resources:
     dialect: dialect.yaml
     schema: schemas/tmp_dadofinanceiromensal.yaml
   - name: vw_carga_despesa_realizada
-    type: table
+    profile: tabular-data-resource
     path: data-raw/vw_carga_despesa_realizada.csv
     scheme: file
     format: csv
