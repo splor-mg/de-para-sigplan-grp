@@ -23,8 +23,6 @@ fields:
       constraints:
         minimum: 1
         maximum: 99
-      notas:
-        - Verificar se 'GrupoFonte - Código' deve entrar no mapeamento (atualmente não foi)
     - name: UniCod
       type: string
       assunto: Unidade Orçamentária
@@ -38,11 +36,15 @@ fields:
       decimalChar: ','
     - name: VlrPagoFinanceiro
       type: number
+      assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
+      objeto: Valor Despesa Paga
       decimalChar: ','
       nota:
-        - Campo não encontrado no armazém GRP. 
+        - No GRP não existe distinção entre Valor Pago Financeiro e Valor Pago Orçamentário
     - name: VlrPagoOrcamentario
       type: number
       decimalChar: ','
       assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
       objeto: Valor Despesa Paga
+      nota:
+        - No GRP não existe distinção entre Valor Pago Financeiro e Valor Pago Orçamentário

@@ -9,8 +9,6 @@ fields:
       objeto: UnidadeOrçam - Código
       constraints:
         pattern: "\\d{4}"
-      notas:
-        - Do ponto de vista de negócio a unidade orçamentária teve alteração de 4 para 5 dígitos
     - name: DSUNIDADE_ORCAM
       type: string
       assunto: Unidade Orçamentária
@@ -105,8 +103,6 @@ fields:
         enum:
           - PROJETO ESTRUTURADOR
           - PROJETO NAO ESTRUTURADOR
-      notas: 
-        - Os valores possíveis para essa coluna não são mais os mesmos
     - name: CDFONTE
       type: integer
       assunto: Fonte de Recurso 
@@ -114,8 +110,6 @@ fields:
       constraints:
         minimum: 1
         maximum: 99
-      notas:
-        - Verificar se 'GrupoFonte - Código' deve entrar no mapeamento (atualmente não foi)
     - name: DSFONTE
       type: string
       assunto: Fonte de Recurso
@@ -137,7 +131,7 @@ fields:
       constraints:
         pattern: "\\d{7}"
       notas:
-        - No armazém GRP não há GMIFP, mas GIFP, ou seja, Modalidade não compõe o código e Grupo da Fonte compõe
+        - No armazém GRP não existe código pré-formatado GMIFP, somente GIGFP. A diferença é a exclusão da Modalidade e inclusão do Grupo da Fonte
     - name: CDCATEGORIA
       type: integer
       assunto: Natureza de Despesa
@@ -169,8 +163,7 @@ fields:
       assunto: Natureza de Despesa
       objeto: ElementoItem - Código
       notas:
-        - O item de despesa não está disponível de forma isolada no Armazém GRP
-        - Do ponto de vista de negócio o item de despesa teve alteração de 2 para 3 dígitos
+        - O item de despesa não está disponível de forma isolada no Armazém GRP, somente como ElementoItem
     - name: DESCRICAO_ITEM
       type: string
       assunto: Natureza de Despesa

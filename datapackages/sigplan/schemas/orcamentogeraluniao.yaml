@@ -30,8 +30,6 @@ fields:
       constraints:
         minimum: 1
         maximum: 99
-      notas:
-        - Verificar se é pra considerar no armazém GRP 'FonteRecurso - Código', que tem 6 dígitos, ou 'GrupoFonte - Código', que tem 2 dígitos.
     - name: ESFCod
       type: integer
       constraints:

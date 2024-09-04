@@ -95,8 +95,6 @@ fields:
         enum:
           - 0
           - 1
-      notas:
-        - Mapeamento realizado com base na combinação entre os valores da coluna IDORCAMENTO e DSORCAMENTO
     - name: DSORCAMENTO
       type: string
       assunto: Funcional Programática
@@ -105,8 +103,6 @@ fields:
         enum:
           - PROJETO ESTRUTURADOR
           - PROJETO NAO ESTRUTURADOR
-      notas: 
-        - Os valores possíveis para essa coluna foram alterados
     - name: CDFONTE
       type: integer
       assunto: Fonte de Recurso 
@@ -114,8 +110,6 @@ fields:
       constraints:
         minimum: 1
         maximum: 99
-      notas:
-        - Verificar se é pra considerar no armazém GRP 'FonteRecurso - Código', que tem 6 dígitos, ou 'GrupoFonte - Código', que tem 2 dígitos.
     - name: DSFONTE
       type: string
       assunto: Fonte de Recurso
@@ -137,7 +131,7 @@ fields:
       constraints:
         pattern: "\\d{7}"
       notas:
-        - No armazém GRP existe GIFP
+        - No armazém GRP não existe código pré-formatado GMIFP, somente GIGFP. A diferença é a exclusão da Modalidade e inclusão do Grupo da Fonte
     - name: CDCATEGORIA
       type: integer
       assunto: Natureza de Despesa
@@ -205,14 +199,13 @@ fields:
       type: datetime 
       format: "%d/%m/%Y %H:%S"
       notas:
-        - Campo Interno
+        - Campo interno
     - name: CODIGO_ITEM
       type: integer
       assunto: Natureza de Despesa
       objeto: ElementoItem - Código
       notas:
-        - O item de despesa não está disponível de forma isolada no Armazém GRP
-        - Do ponto de vista de negócio o item de despesa teve alteração de 2 para 3 dígitos
+        - O item de despesa não está disponível de forma isolada no Armazém GRP, somente como ElementoItem
     - name: DESCRICAO_ITEM
       type: string
       assunto: Natureza de Despesa
