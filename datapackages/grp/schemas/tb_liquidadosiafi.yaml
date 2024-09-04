@@ -9,6 +9,7 @@ fields:
         minimum: 1
         maximum: 999
     - name: ProjetoAtividade - Código
+      assunto: Funcional Programática
       type: string
       constraints:
         pattern: "\\d{4}"

@@ -25,7 +25,7 @@ fields:
         - Coluna preenchida somente com valor '0'
     - name: FPPCod
       type: integer
-      assunto: Natureza de Despesa
+      assunto: Fonte de Recurso
       objeto: FonteRecurso - Código 
       constraints:
         minimum: 1
@@ -86,7 +86,7 @@ fields:
         - Coluna preenchida somente com valor '0'
     - name: FOGCod
       type: integer
-      assunto: Natureza de Despesa
+      assunto: Fonte de Recurso
       objeto: FonteRecurso - Código 
       constraints:
         minimum: 1

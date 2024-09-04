@@ -15,10 +15,11 @@ fields:
       assunto: Funcional Programática
     - name: UnidadeOrçam - Código
       type: string
+      assunto: Unidade Orçamentária
       constraints:
         pattern: "\\d{5}"
     - name: FonteRecurso - Código
-      assunto: Unidade Orçamentária
+      assunto: Fonte de Recurso
       type: string
       constraints:
         pattern: "\\d{6}"

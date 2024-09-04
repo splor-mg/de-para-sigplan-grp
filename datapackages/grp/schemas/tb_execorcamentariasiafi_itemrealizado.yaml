@@ -87,12 +87,12 @@ fields:
           - DEMAIS PROJETOS E ATIVIDADES
     - name: FonteRecurso - Código
       type: string
-      assunto: Natureza de Despesa
+      assunto: Fonte de Recurso
       constraints:
         pattern: "\\d{6}"
     - name: FonteRecurso - Descrição
       type: string
-      assunto: Natureza de Despesa
+      assunto: Fonte de Recurso
     - name: IPU - Código
       type: string
       assunto: Procedência e Uso - IPU
