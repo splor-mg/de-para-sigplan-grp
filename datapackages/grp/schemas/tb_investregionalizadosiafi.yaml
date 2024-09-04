@@ -1,6 +1,7 @@
 fields:
     - name: UnidadeOrçam - Código
       type: string
+      assunto: Unidade Orçamentária
       constraints:
         pattern: "\\d{5}"
     - name: UnidadeOrçam - Nome
@@ -8,6 +9,7 @@ fields:
       assunto: Unidade Orçamentária
     - name: Programa - Código
       type: integer
+      assunto: Funcional Programática
       constraints:
         minimum: 1
         maximum: 999

@@ -133,6 +133,7 @@ fields:
     - name: CDGMIFP
       type: string
       objeto: GIGFP - Código
+      assunto: GIGFP
       constraints:
         pattern: "\\d{7}"
       notas:

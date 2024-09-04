@@ -158,30 +158,42 @@ fields:
       constraints:
         minimum: 0
         maximum: 99
+      notas:
+        - Disponível na consulta tb_execorcamentariasiafi_b no Armazém GRP
     - name: DSELEMENTO
       type: string
       assunto: Natureza de Despesa
       objeto: ElementoDespesa - Descrição
+      notas:
+        - Disponível na consulta tb_execorcamentariasiafi_b no Armazém GRP
     - name: CREDITO_INICIAL
       type: number
       decimalChar: ','
       assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
       objeto: Valor Crédito Inicial 
+      notas:
+        - Disponível na consulta tb_execorcamentariasiafi_a no Armazém GRP
     - name: CREDITO_AUTORIZADO
       type: number
       decimalChar: ','
       assunto: EXECUÇÃO CONSOLIDADA / EXECUÇÃO CONSOLIDADA DA DESPESA
       objeto: Valor Crédito Autorizado
+      notas:
+        - Disponível na consulta tb_execorcamentariasiafi_a no Armazém GRP
     - name: DESPESA_EMPENHADA
       type: number
       decimalChar: ','
       assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
       objeto: Valor Despesa Empenhada
+      notas:
+        - Disponível na consulta tb_execorcamentariasiafi_b no Armazém GRP
     - name: DESPESA_REALIZADA
       type: number
       assunto: EXECUÇÃO ORÇAMENTÁRIA DA DESPESA / DESPESA REALIZADA CONSOLIDADA
       objeto: Valor Despesa Realizada 
       decimalChar: ','
+      notas:
+        - Disponível na consulta tb_execorcamentariasiafi_b no Armazém GRP
     - name: SALDO_EMPENHADO
       type: number
       constraints:

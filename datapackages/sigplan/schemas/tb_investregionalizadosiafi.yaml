@@ -12,6 +12,7 @@ fields:
     - name: CD_PROGRAMA
       type: integer
       objeto: Programa - Código
+      assunto: Funcional Programática
       constraints:
         minimum: 1
         maximum: 999
